@@ -1,0 +1,74 @@
+  0%|                                                                                                                                                                                      | 0/921 [00:00<?, ?it/s]Could not estimate the number of tokens of the input, floating-point operations will not be computed
+use weighted loss
+Traceback (most recent call last):
+  File "/workspace/MMedPO/MMedPO/train/dpo/train_dpo_weighted.py", line 1504, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/train_dpo_weighted.py", line 1478, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 723, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 704, in compute_loss
+    loss, metrics = self.get_batch_metrics(model, inputs, train_eval="train")
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 663, in get_batch_metrics
+    ) = self.concatenated_forward(self.model, batch)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 615, in concatenated_forward
+    rejected_logits = model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/peft_model.py", line 918, in forward
+    return self.base_model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/peft_model.py", line 918, in forward
+    return self.base_model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/language_model/llava_mistral.py", line 91, in forward
+    return super().forward(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 1168, in forward
+    logits = logits.float()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 80.00 MiB (GPU 0; 23.64 GiB total capacity; 17.04 GiB already allocated; 13.12 MiB free; 17.31 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/workspace/MMedPO/MMedPO/train/dpo/train_dpo_weighted.py", line 1504, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/train_dpo_weighted.py", line 1478, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 723, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 704, in compute_loss
+    loss, metrics = self.get_batch_metrics(model, inputs, train_eval="train")
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 663, in get_batch_metrics
+    ) = self.concatenated_forward(self.model, batch)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 615, in concatenated_forward
+    rejected_logits = model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/peft_model.py", line 918, in forward
+    return self.base_model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/peft_model.py", line 918, in forward
+    return self.base_model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/language_model/llava_mistral.py", line 91, in forward
+    return super().forward(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 1168, in forward
+    logits = logits.float()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 80.00 MiB (GPU 0; 23.64 GiB total capacity; 17.04 GiB already allocated; 13.12 MiB free; 17.31 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

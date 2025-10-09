@@ -1,0 +1,32 @@
+2025-09-24 09:26:41,351 INFO    MainThread:185235 [wandb_setup.py:_flush():80] Current SDK version is 0.21.1
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_setup.py:_flush():80] Configure stats pid to 185235
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_setup.py:_flush():80] Loading settings from /root/.config/wandb/settings
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_setup.py:_flush():80] Loading settings from /workspace/MMedPO/MMedPO/wandb/settings
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /workspace/MMedPO/MMedPO/wandb/run-20250924_092641-ex5fct10/logs/debug.log
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /workspace/MMedPO/MMedPO/wandb/run-20250924_092641-ex5fct10/logs/debug-internal.log
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_init.py:init():830] calling init triggers
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-09-24 09:26:41,352 INFO    MainThread:185235 [wandb_init.py:init():871] starting backend
+2025-09-24 09:26:41,562 INFO    MainThread:185235 [wandb_init.py:init():874] sending inform_init request
+2025-09-24 09:26:41,566 INFO    MainThread:185235 [wandb_init.py:init():882] backend started and connected
+2025-09-24 09:26:41,568 INFO    MainThread:185235 [wandb_init.py:init():953] updated telemetry
+2025-09-24 09:26:41,577 INFO    MainThread:185235 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-09-24 09:26:59,418 WARNING MainThread:185235 [wandb_init.py:init():1585] [no run ID] interrupted
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/MMedPO/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1581, in init
+    return wi.init(run_settings, run_config, run_printer)
+  File "/workspace/miniconda3/envs/MMedPO/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 996, in init
+    result = wait_with_progress(
+  File "/workspace/miniconda3/envs/MMedPO/lib/python3.10/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+  File "/workspace/miniconda3/envs/MMedPO/lib/python3.10/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 87, in wait_all_with_progress
+    return asyncio_compat.run(progress_loop_with_timeout)
+  File "/workspace/miniconda3/envs/MMedPO/lib/python3.10/site-packages/wandb/sdk/lib/asyncio_compat.py", line 30, in run
+    return future.result()
+  File "/workspace/miniconda3/envs/MMedPO/lib/python3.10/concurrent/futures/_base.py", line 453, in result
+    self._condition.wait(timeout)
+  File "/workspace/miniconda3/envs/MMedPO/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
