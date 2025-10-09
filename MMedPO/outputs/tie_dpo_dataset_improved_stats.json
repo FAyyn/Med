@@ -1,0 +1,15 @@
+{
+  "total_samples": 4919,
+  "weighted_score_range": [
+    0.01,
+    0.99
+  ],
+  "weighted_score_mean": 0.4539682862370401,
+  "weighted_score_median": 0.44,
+  "weighted_score_std": 0.22844335611964056,
+  "samples_gt_0.1": 4574,
+  "samples_gt_0.3": 3606,
+  "samples_gt_0.5": 1961,
+  "samples_gt_0.7": 729,
+  "samples_gt_0.9": 154
+}

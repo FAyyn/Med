@@ -1,0 +1,2 @@
+File Name,Total Examples,Evaluated Examples,Open-ended Count,Closed-ended Count,Exact Match,F1 Score,Precision,Recall,BLEU Score,Yes/No Accuracy
+master_question_all_pred.json,4919,4918,2975,1943,9.64,15.81,10.64,51.07,7.18,54.30

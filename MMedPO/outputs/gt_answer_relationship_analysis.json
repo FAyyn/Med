@@ -1,0 +1,57 @@
+{
+  "statistics": {
+    "total_samples": 4919,
+    "gt_equals_positive": 4919,
+    "gt_equals_negative": 0,
+    "gt_different_from_both": 0,
+    "gt_empty": 0,
+    "positive_empty": 0,
+    "negative_empty": 0
+  },
+  "examples": {
+    "gt_equals_positive": [
+      {
+        "id": 0,
+        "case_id": "xmlab168",
+        "question": "Is the lung healthy?",
+        "gt_answer": "No, the X-ray image shows a nodule in the lung, indicating it is not healthy.",
+        "positive_answer": "No, the X-ray image shows a nodule in the lung, indicating it is not healthy.",
+        "negative_answer": "Yes, the chest X-ray shows a healthy lung."
+      },
+      {
+        "id": 1,
+        "case_id": "xmlab40",
+        "question": "Where is the liver?",
+        "gt_answer": "Left side",
+        "positive_answer": "Left side",
+        "negative_answer": "The liver is located in the lower left part of the abdomen."
+      },
+      {
+        "id": 2,
+        "case_id": "xmlab237",
+        "question": "What organ is the black part on the left of the image?",
+        "gt_answer": "Right Lung",
+        "positive_answer": "Right Lung",
+        "negative_answer": "The black part on the left of the image represents the stomach."
+      },
+      {
+        "id": 3,
+        "case_id": "xmlab41",
+        "question": "Does the brain look abnormal?",
+        "gt_answer": "Yes",
+        "positive_answer": "Yes",
+        "negative_answer": "No, the brain appears to be normal in the MRI image."
+      },
+      {
+        "id": 4,
+        "case_id": "xmlab179",
+        "question": "Which organ is abnormal, heart or lung?",
+        "gt_answer": "Lung",
+        "positive_answer": "Lung",
+        "negative_answer": "The chest X-ray shows an abnormality in the heart, specifically an enlarged cardiac silhouette."
+      }
+    ],
+    "gt_equals_negative": [],
+    "gt_different_from_both": []
+  }
+}

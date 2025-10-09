@@ -1,0 +1,46 @@
+=== 基于Anchor的DPO Pairs质量分析报告 ===
+
+总DPO pairs数量: 41
+
+=== Anchor相似度分析 ===
+Preferred与Anchor平均相似度: 0.4000 ± 0.0000
+Dispreferred与Anchor平均相似度: 0.0990 ± 0.0314
+相似度差异: 0.3010 (范围: 0.2341 ~ 0.3686)
+
+=== 答案类型分析 ===
+Preferred答案平均长度: 3.68 词
+Dispreferred答案平均长度: 6.00 词
+Anchor答案平均长度: 3.68 词
+
+Yes/No分布:
+  Preferred: Yes=0, No=0
+  Dispreferred: Yes=0, No=0
+  Anchor: Yes=0, No=0
+
+=== 权重分数分析 ===
+平均权重: 0.8000 ± 0.0000
+权重范围: 0.8000 ~ 0.8000
+中位数权重: 0.8000
+权重分布: 高权重(≥0.7)=41, 中权重(0.3-0.7)=0, 低权重(<0.3)=0
+
+=== 对话一致性检查 ===
+一致性率: 100.00% (41/41)
+
+=== 样本展示 ===
+样本 1:
+  Anchor: Right lung
+  Preferred: Right lung
+  Dispreferred: Unable to determine from the image
+  相似度: Pref=0.400, Dispref=0.055
+
+样本 2:
+  Anchor: In the midline
+  Preferred: In the midline
+  Dispreferred: Unable to determine from the image
+  相似度: Pref=0.400, Dispref=0.150
+
+样本 3:
+  Anchor: The lungs
+  Preferred: The lungs
+  Dispreferred: Unable to determine from the image
+  相似度: Pref=0.400, Dispref=0.093

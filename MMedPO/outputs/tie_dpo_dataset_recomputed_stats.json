@@ -1,0 +1,15 @@
+{
+  "total_samples": 4919,
+  "missing_images": 0,
+  "weighted_score_stats": {
+    "min": 0.34,
+    "max": 0.99,
+    "mean": 0.9588879853628786,
+    "median": 0.98,
+    "std": 0.06824673507897512,
+    "samples_gt_0.1": 4919,
+    "samples_gt_0.5": 4892,
+    "samples_gt_0.8": 4726,
+    "samples_eq_1.0": 0
+  }
+}
