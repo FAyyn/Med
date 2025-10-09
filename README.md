@@ -2,7 +2,7 @@
 
 在MMedPO目录下我存放了模型训练的代码，MedEvalKit目录下则是模型评估的代码。
 
-模型训练的脚本均在/workspace/MMedPO/MMedPO/scripts目录下，可通过train_sft_dpo_pipeline_lora_fixed.sh脚本进行SFT训练，通过train_dpo_visual-text.sh进行DPO训练，GPU调用等训练参数可直接在脚本中进行修改。
+模型训练的脚本均在/workspace/MMedPO/MMedPO/scripts目录下，可通过train_sft.sh脚本进行SFT训练，通过train_dpo_visual-text.sh进行DPO训练，GPU调用等训练参数可直接在脚本中进行修改。
 
 SFT训练可直接采用/workspace/MMedPO/MMedPO/data/slake_dpo_weighted_sft_format.json数据。
 
