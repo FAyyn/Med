@@ -40,7 +40,7 @@ deepspeed /workspace/MMedPO/MMedPO/train/dpo/train_dpo_weighted.py \
     --save_strategy "steps" \
     --save_steps 500 \
     --save_total_limit 3 \
-    --learning_rate 5e-7 \
+    --learning_rate 1e-7 \
     --weight_decay 0. \
     --warmup_ratio 0.03 \
     --lr_scheduler_type "cosine" \
