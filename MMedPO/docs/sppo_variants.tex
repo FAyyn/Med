@@ -1,0 +1,79 @@
+% SPPO Variants: Formulation and Implementation Notes
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage[margin=1in]{geometry}
+\title{Shaped Preference Policy Optimization (SPPO) Variants in MMedPO}
+\author{MMedPO Team}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Overview}
+We document three SPPO variants integrated into the weighted DPO trainer: \texttt{sppo}, \texttt{sppo\_adv}, and \texttt{tie\_sppo}. These extend the base DPO loss by shaping either the policy margin or the advantage term, and by applying exponentiated sample weights for TIE-based reweighting.
+
+\section*{Notation}
+For a preference pair $(x, y^{c}, y^{r})$ with chosen $y^{c}$ and rejected $y^{r}$:
+\begin{itemize}
+  \item Policy log-probabilities: $\log\pi(y^{c}|x)$, $\log\pi(y^{r}|x)$.
+  \item Reference log-probabilities: $\log\pi_{\text{ref}}(y^{c}|x)$, $\log\pi_{\text{ref}}(y^{r}|x)$.
+  \item \textbf{Log-ratio}: $\Delta_{\pi} = \log\pi(y^{c}|x) - \log\pi(y^{r}|x)$, \quad $\Delta_{\text{ref}} = \log\pi_{\text{ref}}(y^{c}|x) - \log\pi_{\text{ref}}(y^{r}|x)$.
+  \item \textbf{Base margin}: $m = \Delta_{\pi} - \Delta_{\text{ref}}$.
+  \item Temperature: $\beta>0$.
+  \item Per-sample weight $w \in [0, 1]$ from TIE composite score (optional).
+\end{itemize}
+
+\section*{Base DPO Loss}
+We use the sigmoid variant by default:
+\begin{equation}
+\mathcal{L}_{\text{DPO}} = -\log\sigma\big(\beta\, m\big), \quad \sigma(z) = \frac{1}{1+e^{-z}}.
+\end{equation}
+The hinge alternative is:
+\begin{equation}
+\mathcal{L}_{\text{hinge}} = \max\big(0,\, 1 - \beta\, m\big).
+\end{equation}
+
+\section*{SPPO Variants}
+\subsection*{1. sppo}
+Policy margin shaping with coefficient $\eta$:
+\begin{align}
+ m_{\text{sppo}} &= m + \eta\,\Big(\log\pi(y^{c}|x) - \log\pi(y^{r}|x)\Big) \\
+ \mathcal{L}_{\text{sppo}} &= -\log\sigma\big(\beta\, m_{\text{sppo}}\big)\quad\text{or}\quad \max\big(0,\,1-\beta\, m_{\text{sppo}}\big).
+\end{align}
+
+\subsection*{2. sppo\_adv}
+Advantage shaping with coefficient $\lambda$:
+\begin{align}
+ A &= \Big(\log\pi(y^{c}|x) - \log\pi_{\text{ref}}(y^{c}|x)\Big) - \Big(\log\pi(y^{r}|x) - \log\pi_{\text{ref}}(y^{r}|x)\Big), \\
+ m_{\text{adv}} &= m + \lambda\,A, \\
+ \mathcal{L}_{\text{sppo\_adv}} &= -\log\sigma\big(\beta\, m_{\text{adv}}\big)\quad\text{or}\quad \max\big(0,\,1-\beta\, m_{\text{adv}}\big).
+\end{align}
+
+\subsection*{3. tie\_sppo}
+Exponentiated sample weighting with exponent $\alpha$:
+\begin{align}
+ \mathcal{L}_{\text{tie\_sppo}} &= \bigg(\mathcal{L}_{\text{DPO}}\bigg)\cdot w^{\alpha}, \quad \alpha \ge 0.
+\end{align}
+Here $m$ is unchanged; shaping occurs through the weight scaling. Setting $\alpha=1$ recovers standard weighted DPO.
+
+\section*{Implementation Notes}
+\begin{itemize}
+  \item \textbf{Code hooks}: implemented in \texttt{dpo\_trainer\_weighted.py} via \texttt{DPOTrainer.dpo\_loss}.
+  \item \textbf{Arguments}: parsed in \texttt{train\_dpo\_weighted.py} (\texttt{TrainingArguments}) and passed to \texttt{LLaVATrainer}.
+  \item \textbf{Variants}: select via \texttt{--loss\_variant} in \{\texttt{dpo}, \texttt{sppo}, \texttt{sppo\_adv}, \texttt{tie\_sppo}\}.
+  \item \textbf{Coefficients}: \texttt{--sppo\_eta}, \texttt{--sppo\_lambda}, \texttt{--sppo\_alpha}.
+\end{itemize}
+
+\section*{Usage Examples}
+\begin{verbatim}
+# sppo (policy margin shaping)
+deepspeed train_dpo_weighted.py --loss_variant sppo --sppo_eta 0.5 --beta 0.5
+
+# sppo_adv (advantage shaping)
+deepspeed train_dpo_weighted.py --loss_variant sppo_adv --sppo_lambda 0.5 --beta 0.5
+
+# tie_sppo (exponentiated weights)
+deepspeed train_dpo_weighted.py --loss_variant tie_sppo --sppo_alpha 1.5 --beta 0.5
+\end{verbatim}
+
+\end{document}

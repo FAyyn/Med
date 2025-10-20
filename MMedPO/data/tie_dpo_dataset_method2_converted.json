@@ -1,0 +1,3727 @@
+[
+  {
+    "id": 0,
+    "image": "xmlab155/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.93
+  },
+  {
+    "id": 1,
+    "image": "xmlab186/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.89
+  },
+  {
+    "id": 2,
+    "image": "xmlab189/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.91
+  },
+  {
+    "id": 3,
+    "image": "xmlab197/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.96
+  },
+  {
+    "id": 4,
+    "image": "xmlab2/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there abnormalities in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there abnormalities in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.96
+  },
+  {
+    "id": 5,
+    "image": "xmlab240/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat are the white veins in the black part of the body?"
+      },
+      {
+        "from": "gpt",
+        "value": "Pulmonary bronchus"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat are the white veins in the black part of the body?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.93
+  },
+  {
+    "id": 6,
+    "image": "xmlab256/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 7,
+    "image": "xmlab268/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Liver Cancer"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.75
+  },
+  {
+    "id": 8,
+    "image": "xmlab282/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the white outline of the image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Body"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the white outline of the image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.78
+  },
+  {
+    "id": 9,
+    "image": "xmlab286/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Liver Cancer, Kidney Cancer"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.54
+  },
+  {
+    "id": 10,
+    "image": "xmlab287/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat does the black hole located at the top of the body represent?"
+      },
+      {
+        "from": "gpt",
+        "value": "Esophagus"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat does the black hole located at the top of the body represent?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.82
+  },
+  {
+    "id": 11,
+    "image": "xmlab295/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.59
+  },
+  {
+    "id": 12,
+    "image": "xmlab295/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the upper right lobe of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Quit smoking, enhance physical fitness, and get vaccinated."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the upper right lobe of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.68
+  },
+  {
+    "id": 13,
+    "image": "xmlab296/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, surgical treatment, and chemotherapy."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.61
+  },
+  {
+    "id": 14,
+    "image": "xmlab297/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.99
+  },
+  {
+    "id": 15,
+    "image": "xmlab297/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.99
+  },
+  {
+    "id": 16,
+    "image": "xmlab297/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the center of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Live healthy, enhance physical fitness, and quit smoking."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the center of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.66
+  },
+  {
+    "id": 17,
+    "image": "xmlab300/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Minimal"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.5
+  },
+  {
+    "id": 18,
+    "image": "xmlab301/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part do the organs in this image locate from the aspect of the whole body?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chest"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part do the organs in this image locate from the aspect of the whole body?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.92
+  },
+  {
+    "id": 19,
+    "image": "xmlab302/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the lung abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the lung abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.87
+  },
+  {
+    "id": 20,
+    "image": "xmlab302/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.7
+  },
+  {
+    "id": 21,
+    "image": "xmlab308/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 22,
+    "image": "xmlab308/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Question: What is the effect of the main organ in this picture?\n-Original Answer: Breathe\n-Candidate Answer1: Constriction\n-Candidate Answer2: Constriction\n-Candidate Answer3: Decreased\n\n Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.75
+  },
+  {
+    "id": 23,
+    "image": "xmlab310/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the right of the lung in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Pulmonary infection, lung tumor, tuberculosis, and other diseases"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the right of the lung in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.21
+  },
+  {
+    "id": 24,
+    "image": "xmlab315/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "Respiration"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.68
+  },
+  {
+    "id": 25,
+    "image": "xmlab315/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Physical therapy, surgical treatment"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.52
+  },
+  {
+    "id": 26,
+    "image": "xmlab317/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 27,
+    "image": "xmlab317/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.77
+  },
+  {
+    "id": 28,
+    "image": "xmlab317/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the right of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, surgical treatment"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the right of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.3
+  },
+  {
+    "id": 29,
+    "image": "xmlab318/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.93
+  },
+  {
+    "id": 30,
+    "image": "xmlab318/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the left of the chest in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Inflammation, malignant tumor, trauma, etc."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the left of the chest in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.53
+  },
+  {
+    "id": 31,
+    "image": "xmlab319/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat disease is/are shown on the right of lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "Pulmonary Mass"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat disease is/are shown on the right of lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.96
+  },
+  {
+    "id": 32,
+    "image": "xmlab321/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.95
+  },
+  {
+    "id": 33,
+    "image": "xmlab323/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo the organs in the image exist in the chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo the organs in the image exist in the chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.87
+  },
+  {
+    "id": 34,
+    "image": "xmlab323/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.75
+  },
+  {
+    "id": 35,
+    "image": "xmlab325/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.3
+  },
+  {
+    "id": 36,
+    "image": "xmlab326/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part do the organs in this image locate from the aspect of the whole body?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chest"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part do the organs in this image locate from the aspect of the whole body?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.45
+  },
+  {
+    "id": 37,
+    "image": "xmlab328/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Minimal"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.47
+  },
+  {
+    "id": 38,
+    "image": "xmlab331/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.81
+  },
+  {
+    "id": 39,
+    "image": "xmlab332/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo the organs in the image exist in the chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo the organs in the image exist in the chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.88
+  },
+  {
+    "id": 40,
+    "image": "xmlab332/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.82
+  },
+  {
+    "id": 41,
+    "image": "xmlab333/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.86
+  },
+  {
+    "id": 42,
+    "image": "xmlab337/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "A little"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.76
+  },
+  {
+    "id": 43,
+    "image": "xmlab339/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, surgical treatment"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.58
+  },
+  {
+    "id": 44,
+    "image": "xmlab340/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part do the organs in this image locate from the aspect of the whole body?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chest"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part do the organs in this image locate from the aspect of the whole body?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 45,
+    "image": "xmlab340/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, the X-Ray image shows abnormalities in the patient's right lung, suggestive of pneumothorax."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.69
+  },
+  {
+    "id": 46,
+    "image": "xmlab341/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the lower left lobe of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Quit smoking and enhance physical fitness."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the lower left lobe of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.31
+  },
+  {
+    "id": 47,
+    "image": "xmlab342/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "Respiration"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.44
+  },
+  {
+    "id": 48,
+    "image": "xmlab343/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.78
+  },
+  {
+    "id": 49,
+    "image": "xmlab345/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "A little"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.99
+  },
+  {
+    "id": 50,
+    "image": "xmlab355/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the lower right of lung bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chest tightness, shortness of breath, difficulty breathing, dry cough."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the lower right of lung bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.39
+  },
+  {
+    "id": 51,
+    "image": "xmlab356/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nCan cardiomegaly be observed on the heart in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nCan cardiomegaly be observed on the heart in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.3
+  },
+  {
+    "id": 52,
+    "image": "xmlab356/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the center organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Compression"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the center organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 53,
+    "image": "xmlab356/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the heart in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chest tightness, shortness of breath, difficulty breathing, dry cough."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the heart in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.47
+  },
+  {
+    "id": 54,
+    "image": "xmlab364/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the left of lung bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "Cough foamy mucus sputum, dyspnea, cough, chest pain"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the left of lung bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.51
+  },
+  {
+    "id": 55,
+    "image": "xmlab365/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 56,
+    "image": "xmlab368/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Minimal"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.16
+  },
+  {
+    "id": 57,
+    "image": "xmlab373/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the center organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Compression"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the center organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.45
+  },
+  {
+    "id": 58,
+    "image": "xmlab376/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical therapy, supportive therapy"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.75
+  },
+  {
+    "id": 59,
+    "image": "xmlab377/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat can the organ with black color in this image be used for?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.78
+  },
+  {
+    "id": 60,
+    "image": "xmlab377/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, surgical treatment, chemotherapy"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the left of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.51
+  },
+  {
+    "id": 61,
+    "image": "xmlab387/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the center organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Promote blood flow"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the center organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.53
+  },
+  {
+    "id": 62,
+    "image": "xmlab388/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Minimal"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.28
+  },
+  {
+    "id": 63,
+    "image": "xmlab389/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's right lung?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.87
+  },
+  {
+    "id": 64,
+    "image": "xmlab39/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the liver not healthy?"
+      },
+      {
+        "from": "gpt",
+        "value": "Question: Is the liver not healthy?\n-Original Answer: No\n-Candidate Answer1: No \n-Candidate Answer2: No\n-Candidate Answer3: No    \n\n No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the liver not healthy?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.76
+  },
+  {
+    "id": 65,
+    "image": "xmlab390/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the lower right of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, surgical treatment, chemotherapy"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the disease located on the lower right of lung in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.55
+  },
+  {
+    "id": 66,
+    "image": "xmlab392/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Breathe"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the main organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.56
+  },
+  {
+    "id": 67,
+    "image": "xmlab395/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the tissue on the left of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Participate in hearing, speech, and memory"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the tissue on the left of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.51
+  },
+  {
+    "id": 68,
+    "image": "xmlab397/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the tissue in the center of the organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Control heartbeat and breathing"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the tissue in the center of the organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.56
+  },
+  {
+    "id": 69,
+    "image": "xmlab399/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the organ on the center of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Control heartbeat and breathing"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the organ on the center of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.05
+  },
+  {
+    "id": 70,
+    "image": "xmlab403/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the tissue on the center of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Control heartbeat and breathing."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the tissue on the center of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.53
+  },
+  {
+    "id": 71,
+    "image": "xmlab411/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the shape of tooth in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "U-shaped"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the shape of tooth in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.95
+  },
+  {
+    "id": 72,
+    "image": "xmlab412/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the shape of tooth in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "U-shaped"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the shape of tooth in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.66
+  },
+  {
+    "id": 73,
+    "image": "xmlab415/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo any of the organs in the picture belong to the respiratory system?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo any of the organs in the picture belong to the respiratory system?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.81
+  },
+  {
+    "id": 74,
+    "image": "xmlab421/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo any of the organs in the picture belong to the respiratory system?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo any of the organs in the picture belong to the respiratory system?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.85
+  },
+  {
+    "id": 75,
+    "image": "xmlab423/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the black hollow tissue in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Ventilation, pronunciation"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the black hollow tissue in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.24
+  },
+  {
+    "id": 76,
+    "image": "xmlab433/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the neck?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the neck?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.67
+  },
+  {
+    "id": 77,
+    "image": "xmlab434/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich is trachea in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Black Hollow"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich is trachea in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.74
+  },
+  {
+    "id": 78,
+    "image": "xmlab435/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.16
+  },
+  {
+    "id": 79,
+    "image": "xmlab438/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the head?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the head?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.97
+  },
+  {
+    "id": 80,
+    "image": "xmlab438/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain Edema, Brain Enhancing Tumor"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.4
+  },
+  {
+    "id": 81,
+    "image": "xmlab438/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.31
+  },
+  {
+    "id": 82,
+    "image": "xmlab440/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the upper left lobe of brain in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain embryonic tissue dysplasia, genetic factors, chemical factors"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the upper left lobe of brain in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.55
+  },
+  {
+    "id": 83,
+    "image": "xmlab441/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the upper left lobe of organ in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "Visual impairment, vomiting, tinnitus, increased intracranial pressure, headache, pain"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the upper left lobe of organ in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.39
+  },
+  {
+    "id": 84,
+    "image": "xmlab443/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the tumor enhancing?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the tumor enhancing?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.78
+  },
+  {
+    "id": 85,
+    "image": "xmlab443/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the top of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "Visual impairment, vomiting, tinnitus, increased intracranial pressure, seizures, stroke, or death"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the top of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.55
+  },
+  {
+    "id": 86,
+    "image": "xmlab444/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the head?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the head?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.89
+  },
+  {
+    "id": 87,
+    "image": "xmlab445/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, including corticosteroids, supportive treatment, and surgical treatment."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.76
+  },
+  {
+    "id": 88,
+    "image": "xmlab446/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Pharmacotherapy, rehabilitation, and corticosteroids. Surgery might be considered in certain severe cases."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.52
+  },
+  {
+    "id": 89,
+    "image": "xmlab450/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the right lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treat brain diseases promptly and keep healthy. The right lobe of the brain is exposed to the same risk factors as the left lobe, including age, hypertension, and diabetes."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the right lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.49
+  },
+  {
+    "id": 90,
+    "image": "xmlab452/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, supportive treatment, surgical treatment, and corticosteroids."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.59
+  },
+  {
+    "id": 91,
+    "image": "xmlab459/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the left lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Pay attention to dietary hygiene, strengthen physical fitness, and avoid brain trauma."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the left lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.62
+  },
+  {
+    "id": 92,
+    "image": "xmlab461/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the chest?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.85
+  },
+  {
+    "id": 93,
+    "image": "xmlab464/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the tumor enhancing?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, the MRI image shows an enhancing tumor."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the tumor enhancing?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.91
+  },
+  {
+    "id": 94,
+    "image": "xmlab464/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, supportive treatment, corticosteroids, and surgical treatment if necessary."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.32
+  },
+  {
+    "id": 95,
+    "image": "xmlab466/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, supportive treatment, surgical treatment, and corticosteroids."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.51
+  },
+  {
+    "id": 96,
+    "image": "xmlab470/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, including the use of corticosteroids, supportive treatment, and surgical treatment."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.52
+  },
+  {
+    "id": 97,
+    "image": "xmlab472/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a X-Ray?"
+      },
+      {
+        "from": "gpt",
+        "value": "No, it is a CT scan."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a X-Ray?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.76
+  },
+  {
+    "id": 98,
+    "image": "xmlab477/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the tumor enhancing?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the tumor enhancing?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.87
+  },
+  {
+    "id": 99,
+    "image": "xmlab477/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the upper right lobe of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "Visual impairment, vomiting, tinnitus, increased intracranial pressure"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the upper right lobe of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.31
+  },
+  {
+    "id": 100,
+    "image": "xmlab479/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None. The image is taken and displayed in a way that does not cause any damage to the body."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.75
+  },
+  {
+    "id": 101,
+    "image": "xmlab48/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain Edema, Brain Tumor"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.7
+  },
+  {
+    "id": 102,
+    "image": "xmlab480/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain Edema, Brain Enhancing Tumor, Brain Non-enhancing Tumor"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.6
+  },
+  {
+    "id": 103,
+    "image": "xmlab480/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.94
+  },
+  {
+    "id": 104,
+    "image": "xmlab481/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, including corticosteroids, supportive treatment, and surgical treatment."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.5
+  },
+  {
+    "id": 105,
+    "image": "xmlab484/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image taken via X-Ray?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image taken via X-Ray?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.93
+  },
+  {
+    "id": 106,
+    "image": "xmlab484/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, supportive treatment, surgical treatment"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.36
+  },
+  {
+    "id": 107,
+    "image": "xmlab487/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the upper right lobe of brain in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain embryonic tissue dysplasia, genetic factors, chemical factors"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main cause of the disease on the upper right lobe of brain in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.68
+  },
+  {
+    "id": 108,
+    "image": "xmlab492/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the lower right lobe of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "Visual impairment, vomiting, tinnitus, increased intracranial pressure"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the lower right lobe of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.43
+  },
+  {
+    "id": 109,
+    "image": "xmlab493/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the head?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a study of the head?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 110,
+    "image": "xmlab493/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.72
+  },
+  {
+    "id": 111,
+    "image": "xmlab494/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left brain lobe?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left brain lobe?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.97
+  },
+  {
+    "id": 112,
+    "image": "xmlab494/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the upper left lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Pay attention to dietary hygiene, strengthen physical fitness, and avoid brain trauma."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the upper left lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.61
+  },
+  {
+    "id": 113,
+    "image": "xmlab500/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.91
+  },
+  {
+    "id": 114,
+    "image": "xmlab501/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain Edema, Brain Enhancing Tumor, Brain Non-enhancing Tumor"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.65
+  },
+  {
+    "id": 115,
+    "image": "xmlab501/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.29
+  },
+  {
+    "id": 116,
+    "image": "xmlab502/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain Edema, Brain Enhancing Tumor, Brain Non-enhancing Tumor"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.55
+  },
+  {
+    "id": 117,
+    "image": "xmlab504/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, supportive treatment, surgical treatment, with corticosteroids."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.64
+  },
+  {
+    "id": 118,
+    "image": "xmlab512/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Brain Edema, Brain Enhancing Tumor, Brain Non-enhancing Tumor"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.94
+  },
+  {
+    "id": 119,
+    "image": "xmlab514/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Medical treatment, supportive treatment, surgical treatment, and chemotherapy"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to treat the most severe disease in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.24
+  },
+  {
+    "id": 120,
+    "image": "xmlab523/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left brain lobe?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs/Are there abnormalities in the patient's left brain lobe?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.81
+  },
+  {
+    "id": 121,
+    "image": "xmlab523/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.38
+  },
+  {
+    "id": 122,
+    "image": "xmlab526/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs brain tumor white or gray relative to other tissues?"
+      },
+      {
+        "from": "gpt",
+        "value": "White"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs brain tumor white or gray relative to other tissues?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.05
+  },
+  {
+    "id": 123,
+    "image": "xmlab531/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a X-Ray?"
+      },
+      {
+        "from": "gpt",
+        "value": "No, it is a CT scan."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this a X-Ray?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.87
+  },
+  {
+    "id": 124,
+    "image": "xmlab531/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the upper right lobe of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "Visual impairment, vomiting, tinnitus, increased intracranial pressure"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat kind of symptoms will the disease on the upper right lobe of brain in the picture bring to the patient?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.41
+  },
+  {
+    "id": 125,
+    "image": "xmlab533/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the right lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treat brain diseases promptly, keep healthy."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow to prevent the occurrence of the disease on the right lobe of brain in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.66
+  },
+  {
+    "id": 126,
+    "image": "xmlab534/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.65
+  },
+  {
+    "id": 127,
+    "image": "xmlab542/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich organs/organ is part of the respiratory system in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lungs"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich organs/organ is part of the respiratory system in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.48
+  },
+  {
+    "id": 128,
+    "image": "xmlab547/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the gray organ on the left of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Biotransformation, detoxification"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the gray organ on the left of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.86
+  },
+  {
+    "id": 129,
+    "image": "xmlab553/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the leftmost organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Absorb nutrients, secrete enzymes, digest food"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the leftmost organ in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.31
+  },
+  {
+    "id": 130,
+    "image": "xmlab562/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there organs in the picture that can detoxicate?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there organs in the picture that can detoxicate?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.73
+  },
+  {
+    "id": 131,
+    "image": "xmlab572/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the black hollow on the top of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Contrast"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the effect of the black hollow on the top of this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.69
+  },
+  {
+    "id": 132,
+    "image": "xmlab594/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there organs in the picture that can perceive things?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there organs in the picture that can perceive things?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.71
+  },
+  {
+    "id": 133,
+    "image": "xmlab595/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Minimal"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.92
+  },
+  {
+    "id": 134,
+    "image": "xmlab602/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain the tissue that is related with remembering things?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain the tissue that is related with remembering things?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.74
+  },
+  {
+    "id": 135,
+    "image": "xmlab611/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the organ on the top of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Storage of urine"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the organ on the top of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.53
+  },
+  {
+    "id": 136,
+    "image": "xmlab614/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the femoral head exist in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the femoral head exist in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.98
+  },
+  {
+    "id": 137,
+    "image": "xmlab618/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Much. Taking a CT scan is minimally invasive."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.53
+  },
+  {
+    "id": 138,
+    "image": "xmlab619/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the femoral head exist in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the femoral head exist in this picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.98
+  },
+  {
+    "id": 139,
+    "image": "xmlab633/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Question: How much damage will be caused to the body taking such an image?\n\n Minimal"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow much damage will be caused to the body taking such an image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Treatment options would require more detailed clinical assessment."
+      }
+    ],
+    "weighted_score": 0.67
+  },
+  {
+    "id": 140,
+    "image": "xmlab640/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the organ on the top of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "Absorb nutrients, secrete enzymes, digest food"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the function of the organ on the top of this image?"
+      },
+      {
+        "from": "gpt",
+        "value": "The specific details are not clearly visible in this image."
+      }
+    ],
+    "weighted_score": 0.29
+  },
+  {
+    "id": 141,
+    "image": "xmlab78/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.66
+  },
+  {
+    "id": 142,
+    "image": "xmlab79/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.44
+  },
+  {
+    "id": 143,
+    "image": "xmlab81/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.6
+  },
+  {
+    "id": 144,
+    "image": "xmlab89/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.72
+  },
+  {
+    "id": 145,
+    "image": "xmlab96/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lung cancer"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.08
+  },
+  {
+    "id": 146,
+    "image": "xmlab97/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lung cancer"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.22
+  },
+  {
+    "id": 147,
+    "image": "xmlab98/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "None"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'm not entirely certain about the health status based on this image."
+      }
+    ],
+    "weighted_score": 0.45
+  },
+  {
+    "id": 148,
+    "image": "xmlab99/source_mask_plus_full.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, the CT scan image contains the liver."
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "I cannot provide a definitive answer based on this image alone."
+      }
+    ],
+    "weighted_score": 0.97
+  }
+]

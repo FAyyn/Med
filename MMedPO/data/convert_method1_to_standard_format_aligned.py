@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+"""
+Aligned converter for Method 1 (Visual Indirect) to standard DPO format.
+
+Adjustments vs original:
+- Image path normalization: always use basename (e.g., synpic29265.jpg) to align
+  with Method 2 dataset where image is a filename.
+- Keep original script unmodified; this is a new aligned version.
+"""
+
+import json
+import os
+from typing import Dict, Any
+
+def extract_relative_path_aligned(image_path: str) -> str:
+    """Return only the image filename to unify across datasets."""
+    return os.path.basename(image_path)
+
+
+def convert_method1_to_standard_format_aligned(input_file: str, output_file: str):
+    """Convert Method 1 data to aligned standard DPO format."""
+    converted_data = []
+    with open(input_file, 'r', encoding='utf-8') as f:
+        for line_num, line in enumerate(f, 1):
+            try:
+                data = json.loads(line.strip())
+                question = data['question']
+                pref_answer = data['pref']['answer']
+                disp_answer = data['disp']['answer']
+                image_path = data['pref']['image_path']
+                weight = data['weight']
+
+                # Skip items where preferred and dispreferred answers are identical
+                if pref_answer.strip() == disp_answer.strip():
+                    continue
+
+                rejected_answer = disp_answer
+                rounded_weight = round(weight, 2)
+
+                converted_entry = {
+                    "id": line_num - 1,
+                    "image": extract_relative_path_aligned(image_path),
+                    "conversations": [
+                        {"from": "human", "value": f"{question}"},
+                        {"from": "gpt", "value": pref_answer}
+                    ],
+                    "rejected_conversations": [
+                        {"from": "human", "value": f"{question}"},
+                        {"from": "gpt", "value": rejected_answer}
+                    ],
+                    "weighted_score": rounded_weight
+                }
+                converted_data.append(converted_entry)
+                if line_num % 100 == 0:
+                    print(f"Processed {line_num} items...")
+            except json.JSONDecodeError as e:
+                print(f"Error parsing line {line_num}: {e}")
+                continue
+            except KeyError as e:
+                print(f"Missing key in line {line_num}: {e}")
+                continue
+
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(converted_data, f, ensure_ascii=False, indent=2)
+
+    print(f"\nConversion completed!")
+    print(f"Total items processed: {len(converted_data)}")
+    print(f"Output saved to: {output_file}")
+
+    if converted_data:
+        sample = converted_data[0]
+        print(f"\nSample conversion:")
+        print(f"ID: {sample['id']}")
+        print(f"Image: {sample['image']}")
+        print(f"Question: {sample['conversations'][0]['value']}")
+        print(f"Preferred Answer: {sample['conversations'][1]['value']}")
+        print(f"Rejected Answer: {sample['rejected_conversations'][1]['value']}")
+        print(f"Weighted Score: {sample['weighted_score']}")
+
+
+if __name__ == "__main__":
+    input_file = "/workspace/MMedPO/MMedPO/outputs/combined_vqa_rad/dpo_pairs_visual_indirect.jsonl"
+    output_file = "/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_vqa_rad_aligned.json"
+    convert_method1_to_standard_format_aligned(input_file, output_file)
