@@ -2,7 +2,7 @@
 export HF_ENDPOINT=https://hf-mirror.com
 
 # Available datasets: MMMU-Medical-test,MMMU-Medical-val,PMC_VQA,MedQA_USMLE,MedMCQA,PubMedQA,OmniMedVQA,Medbullets_op4,Medbullets_op5,MedXpertQA-Text,MedXpertQA-MM,SuperGPQA,HealthBench,IU_XRAY,CheXpert_Plus,MIMIC_CXR,CMB,CMExam,CMMLU,MedQA_MCMLE,VQA_RAD,SLAKE,PATH_VQA,MedFrameQA,Radrestruct
-EVAL_DATASETS="SLAKE" 
+EVAL_DATASETS="IU_XRAY" 
 # 修复：对于VQA_RAD数据集，使用具体的JSONL文件路径而不是目录路径
 DATASETS_PATH="/workspace/MMedPO/datasets"
 OUTPUT_PATH="/workspace/MMedPO/MedEvalKit/SFT_New_Pairs_Slake_round2"
