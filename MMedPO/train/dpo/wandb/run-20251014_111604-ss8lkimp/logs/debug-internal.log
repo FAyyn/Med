@@ -1,6 +1,0 @@
-{"time":"2025-10-14T11:16:04.312705201+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
-{"time":"2025-10-14T11:16:05.020085968+08:00","level":"INFO","msg":"stream: created new stream","id":"ss8lkimp"}
-{"time":"2025-10-14T11:16:05.020182279+08:00","level":"INFO","msg":"stream: started","id":"ss8lkimp"}
-{"time":"2025-10-14T11:16:05.020208995+08:00","level":"INFO","msg":"handler: started","stream_id":"ss8lkimp"}
-{"time":"2025-10-14T11:16:05.020210868+08:00","level":"INFO","msg":"writer: started","stream_id":"ss8lkimp"}
-{"time":"2025-10-14T11:16:05.020258524+08:00","level":"INFO","msg":"sender: started","stream_id":"ss8lkimp"}
