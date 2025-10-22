@@ -8,6 +8,11 @@ SFT训练可直接采用DPO数据转换为sft数据，/workspace/MMedPO/MMedPO/s
 
 方式一pairs的构建脚本为/workspace/MMedPO/scripts/run_inference_visual_indirect.sh，使用/workspace/MMedPO/MMedPO/data/slake_dpo_weighted.json作为输入，进行tie计算后构建pairs，原图片和背景图片过大无法上传到仓库，因此可以直接使用生成好的数据集进行DPO或SSPO训练。
 
+SSPO的训练脚本有三个，分别是
+/workspace/MMedPO/MMedPO/scripts/train_sspo_adv.sh,这是用权重代替动态w计算loss的sspo
+/workspace/MMedPO/MMedPO/scripts/train_sspo.sh,这是标准的sspo
+/workspace/MMedPO/MMedPO/scripts/train_tie_sspo.sh，这是添加了动态w计算的sspo
+
 
 
 方式一数据集路径为：/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_converted.json
