@@ -4,9 +4,14 @@
 
 模型训练的脚本均在/workspace/MMedPO/MMedPO/scripts目录下，可通过train_sft.sh脚本进行SFT训练，通过train_dpo_visual-text.sh进行DPO训练，GPU调用等训练参数可直接在脚本中进行修改。
 
-SFT训练可直接采用/workspace/MMedPO/MMedPO/data/slake_dpo_weighted_sft_format.json数据。
+SFT训练可直接采用DPO数据转换为sft数据，/workspace/MMedPO/MMedPO/scripts/train_sft.sh脚本中添加了数据格式的转换。
 
-tie_results_with_dpo_weight_SLAKE.json与tie_dpo_dataset_slake_round2.json分别是DPO第一轮与第二轮的数据。
+方式一pairs的构建脚本为/workspace/MMedPO/scripts/run_inference_visual_indirect.sh，使用/workspace/MMedPO/MMedPO/data/slake_dpo_weighted.json作为输入，进行tie计算后构建pairs，原图片和背景图片过大无法上传到仓库，因此可以直接使用生成好的数据集进行DPO或SSPO训练。
+
+
+
+方式一数据集路径为：/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_converted.json
+
 
 评估则可以直接参考MedEvalKit的readme文件，在/workspace/MMedPO/MedEvalKit目录下。
 
