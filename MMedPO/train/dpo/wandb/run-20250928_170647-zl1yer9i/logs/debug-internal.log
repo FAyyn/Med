@@ -1,0 +1,13 @@
+{"time":"2025-09-28T17:06:48.178029338+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-09-28T17:06:48.691483013+08:00","level":"INFO","msg":"stream: created new stream","id":"zl1yer9i"}
+{"time":"2025-09-28T17:06:48.691533376+08:00","level":"INFO","msg":"stream: started","id":"zl1yer9i"}
+{"time":"2025-09-28T17:06:48.691558708+08:00","level":"INFO","msg":"sender: started","stream_id":"zl1yer9i"}
+{"time":"2025-09-28T17:06:48.691545186+08:00","level":"INFO","msg":"handler: started","stream_id":"zl1yer9i"}
+{"time":"2025-09-28T17:06:48.691596875+08:00","level":"INFO","msg":"writer: started","stream_id":"zl1yer9i"}
+{"time":"2025-09-28T18:44:39.539740593+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/zl1yer9i/file_stream\": read tcp 127.0.0.1:37210->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2025-09-28T18:44:46.714767227+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/zl1yer9i/file_stream\": read tcp 127.0.0.1:34706->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2025-09-28T19:38:06.530499047+08:00","level":"INFO","msg":"stream: closing","id":"zl1yer9i"}
+{"time":"2025-09-28T19:38:09.51133139+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-28T19:38:09.872916953+08:00","level":"INFO","msg":"handler: closed","stream_id":"zl1yer9i"}
+{"time":"2025-09-28T19:38:09.872998037+08:00","level":"INFO","msg":"sender: closed","stream_id":"zl1yer9i"}
+{"time":"2025-09-28T19:38:09.873008741+08:00","level":"INFO","msg":"stream: closed","id":"zl1yer9i"}

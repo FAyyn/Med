@@ -1,0 +1,6 @@
+{"time":"2025-10-13T16:34:42.07749807+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-10-13T16:34:42.759190623+08:00","level":"INFO","msg":"stream: created new stream","id":"zp2erfm5"}
+{"time":"2025-10-13T16:34:42.759321304+08:00","level":"INFO","msg":"stream: started","id":"zp2erfm5"}
+{"time":"2025-10-13T16:34:42.759381715+08:00","level":"INFO","msg":"handler: started","stream_id":"zp2erfm5"}
+{"time":"2025-10-13T16:34:42.75939208+08:00","level":"INFO","msg":"writer: started","stream_id":"zp2erfm5"}
+{"time":"2025-10-13T16:34:42.759453001+08:00","level":"INFO","msg":"sender: started","stream_id":"zp2erfm5"}

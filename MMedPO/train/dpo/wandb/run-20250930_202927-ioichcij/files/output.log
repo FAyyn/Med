@@ -1,0 +1,40 @@
+  0%|                                                                           | 0/820 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1504, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1478, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 724, in training_step
+    with self.accelerator.no_sync(model):
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/accelerator.py", line 862, in no_sync
+    with context():
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2246, in no_sync
+    assert not self.inside_no_sync_ctxt, f"no_sync context manager reentry is unsupported"
+AssertionError: no_sync context manager reentry is unsupported
+Traceback (most recent call last):
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1504, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1478, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 724, in training_step
+    with self.accelerator.no_sync(model):
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/accelerator.py", line 862, in no_sync
+    with context():
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2246, in no_sync
+    assert not self.inside_no_sync_ctxt, f"no_sync context manager reentry is unsupported"
+AssertionError: no_sync context manager reentry is unsupported

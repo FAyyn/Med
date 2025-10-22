@@ -1,0 +1,6 @@
+{"time":"2025-10-14T14:15:33.023384516+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-10-14T14:15:33.74519744+08:00","level":"INFO","msg":"stream: created new stream","id":"smvlxygo"}
+{"time":"2025-10-14T14:15:33.74528503+08:00","level":"INFO","msg":"stream: started","id":"smvlxygo"}
+{"time":"2025-10-14T14:15:33.745316745+08:00","level":"INFO","msg":"handler: started","stream_id":"smvlxygo"}
+{"time":"2025-10-14T14:15:33.74533425+08:00","level":"INFO","msg":"writer: started","stream_id":"smvlxygo"}
+{"time":"2025-10-14T14:15:33.745380755+08:00","level":"INFO","msg":"sender: started","stream_id":"smvlxygo"}

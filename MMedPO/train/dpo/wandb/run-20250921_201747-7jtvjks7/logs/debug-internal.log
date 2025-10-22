@@ -1,0 +1,55 @@
+{"time":"2025-09-21T20:17:47.970412519+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-09-21T20:17:48.964752989+08:00","level":"INFO","msg":"stream: created new stream","id":"7jtvjks7"}
+{"time":"2025-09-21T20:17:48.964840334+08:00","level":"INFO","msg":"stream: started","id":"7jtvjks7"}
+{"time":"2025-09-21T20:17:48.964875438+08:00","level":"INFO","msg":"handler: started","stream_id":"7jtvjks7"}
+{"time":"2025-09-21T20:17:48.964887939+08:00","level":"INFO","msg":"writer: started","stream_id":"7jtvjks7"}
+{"time":"2025-09-21T20:17:48.964933311+08:00","level":"INFO","msg":"sender: started","stream_id":"7jtvjks7"}
+{"time":"2025-09-21T20:44:12.285225822+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-21T21:14:36.036289531+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-21T21:15:21.049275042+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-21T21:59:34.717740698+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-21T22:28:07.978290184+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-21T23:47:39.981950331+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-21T23:48:12.125559458+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-21T23:48:30.189409311+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-21T23:48:30.334063343+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-21T23:48:33.006651902+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-21T23:48:37.542434148+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-21T23:48:40.028924662+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-09-21T23:48:46.984881444+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-21T23:49:10.664456093+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": read tcp 127.0.0.1:57456->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2025-09-21T23:53:10.072233827+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-21T23:53:55.123618953+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T00:01:05.679857098+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-22T00:03:40.326870623+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T00:05:20.764354232+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-22T00:05:30.296521441+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-22T00:15:40.736897594+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T02:03:14.301308386+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T02:50:46.313846245+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T03:26:47.011291411+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T03:27:35.740511072+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-22T04:36:18.818994207+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T04:37:03.760720739+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T05:02:49.383593254+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T06:01:06.185047073+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T06:23:21.736630001+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T06:48:22.804887475+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T07:04:35.773304961+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-22T07:12:38.038271188+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T07:17:38.056367138+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T07:21:37.972841399+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-09-22T07:22:10.054570301+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-22T07:22:44.713957561+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-22T07:38:08.441462818+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T08:00:23.829055914+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T08:01:08.832214495+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T08:58:25.555885848+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-09-22T09:09:17.878750398+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": read tcp 127.0.0.1:47112->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2025-09-22T09:37:50.210256262+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-22T09:40:05.11502205+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/7jtvjks7/file_stream\": EOF"}
+{"time":"2025-09-22T10:46:42.473996828+08:00","level":"INFO","msg":"stream: closing","id":"7jtvjks7"}
+{"time":"2025-09-22T10:46:45.09613068+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-22T10:46:45.72094635+08:00","level":"INFO","msg":"handler: closed","stream_id":"7jtvjks7"}
+{"time":"2025-09-22T10:46:45.721098371+08:00","level":"INFO","msg":"sender: closed","stream_id":"7jtvjks7"}
+{"time":"2025-09-22T10:46:45.72116623+08:00","level":"INFO","msg":"stream: closed","id":"7jtvjks7"}

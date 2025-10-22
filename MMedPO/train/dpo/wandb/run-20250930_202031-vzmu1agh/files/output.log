@@ -1,0 +1,37 @@
+  0%|                                                                                                                                                                                      | 0/820 [00:00<?, ?it/s]Traceback (most recent call last):
+use weighted loss
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1504, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1478, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 2781, in training_step
+    self.accelerator.backward(loss)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/accelerator.py", line 1847, in backward
+    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/utils/deepspeed.py", line 176, in backward
+    self.engine.step()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2393, in step
+    assert not self.inside_no_sync_ctxt, \
+AssertionError: It is illegal to call Engine.step() inside no_sync context manager
+Traceback (most recent call last):
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1504, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1478, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 2781, in training_step
+    self.accelerator.backward(loss)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/accelerator.py", line 1847, in backward
+    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/utils/deepspeed.py", line 176, in backward
+    self.engine.step()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2393, in step
+    assert not self.inside_no_sync_ctxt, \
+AssertionError: It is illegal to call Engine.step() inside no_sync context manager

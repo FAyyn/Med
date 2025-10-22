@@ -1,0 +1,80 @@
+  0%|                                                                            | 0/1233 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1634, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1608, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 859, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 840, in compute_loss
+    loss, metrics = self.get_batch_metrics(model, inputs, train_eval="train")
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 806, in get_batch_metrics
+    ) = self.concatenated_forward(self.ref_model, batch)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 728, in concatenated_forward
+    chosen_logits = model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/language_model/llava_llama.py", line 81, in forward
+    ) = self.prepare_inputs_labels_for_multimodal(
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/llava_arch.py", line 213, in prepare_inputs_labels_for_multimodal
+    image_features = self.encode_images(images)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/llava_arch.py", line 141, in encode_images
+    image_features = self.get_model().get_vision_tower()(images)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/multimodal_encoder/clip_encoder.py", line 54, in forward
+    image_forward_outs = self.vision_tower(images.to(device=self.device, dtype=self.dtype), output_hidden_states=True)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1695, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'CLIPVisionTower' object has no attribute 'vision_tower'. Did you mean: 'vision_tower_name'?
+Traceback (most recent call last):
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1634, in <module>
+    train()
+  File "/workspace/MMedPO/MMedPO/train/dpo/./train_dpo_weighted.py", line 1608, in train
+    trainer.train()
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 859, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 840, in compute_loss
+    loss, metrics = self.get_batch_metrics(model, inputs, train_eval="train")
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 806, in get_batch_metrics
+    ) = self.concatenated_forward(self.ref_model, batch)
+  File "/workspace/MMedPO/MMedPO/train/dpo/dpo_trainer_weighted.py", line 728, in concatenated_forward
+    chosen_logits = model(
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/language_model/llava_llama.py", line 81, in forward
+    ) = self.prepare_inputs_labels_for_multimodal(
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/llava_arch.py", line 213, in prepare_inputs_labels_for_multimodal
+    image_features = self.encode_images(images)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/llava_arch.py", line 141, in encode_images
+    image_features = self.get_model().get_vision_tower()(images)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/workspace/MMedPO/MMedPO/train/dpo/llava/model/multimodal_encoder/clip_encoder.py", line 54, in forward
+    image_forward_outs = self.vision_tower(images.to(device=self.device, dtype=self.dtype), output_hidden_states=True)
+  File "/workspace/miniconda3/envs/MMedPO_check_point/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1695, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'CLIPVisionTower' object has no attribute 'vision_tower'. Did you mean: 'vision_tower_name'?

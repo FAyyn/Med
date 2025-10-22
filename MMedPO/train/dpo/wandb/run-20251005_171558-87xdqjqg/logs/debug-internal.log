@@ -1,0 +1,12 @@
+{"time":"2025-10-05T17:15:59.199100813+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-10-05T17:16:00.102876949+08:00","level":"INFO","msg":"stream: created new stream","id":"87xdqjqg"}
+{"time":"2025-10-05T17:16:00.102941096+08:00","level":"INFO","msg":"stream: started","id":"87xdqjqg"}
+{"time":"2025-10-05T17:16:00.102962985+08:00","level":"INFO","msg":"handler: started","stream_id":"87xdqjqg"}
+{"time":"2025-10-05T17:16:00.10298487+08:00","level":"INFO","msg":"writer: started","stream_id":"87xdqjqg"}
+{"time":"2025-10-05T17:16:00.10299327+08:00","level":"INFO","msg":"sender: started","stream_id":"87xdqjqg"}
+{"time":"2025-10-05T17:48:21.400254144+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/FedAgent/huggingface/87xdqjqg/file_stream\": read tcp 127.0.0.1:45042->127.0.0.1:7890: read: connection reset by peer"}
+{"time":"2025-10-05T17:49:34.807688696+08:00","level":"INFO","msg":"stream: closing","id":"87xdqjqg"}
+{"time":"2025-10-05T17:49:36.770518993+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-05T17:49:37.480101876+08:00","level":"INFO","msg":"handler: closed","stream_id":"87xdqjqg"}
+{"time":"2025-10-05T17:49:37.480296943+08:00","level":"INFO","msg":"sender: closed","stream_id":"87xdqjqg"}
+{"time":"2025-10-05T17:49:37.480368402+08:00","level":"INFO","msg":"stream: closed","id":"87xdqjqg"}

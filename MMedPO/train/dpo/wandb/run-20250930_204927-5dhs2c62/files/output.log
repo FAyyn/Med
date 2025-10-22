@@ -1,0 +1,45 @@
+  0%|                                                                           | 0/820 [00:00<?, ?it/s]Could not estimate the number of tokens of the input, floating-point operations will not be computed
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+  1%|▋                                                                  | 8/820 [00:30<49:12,  3.64s/it]
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+use weighted loss
+{'loss': 0.0882, 'learning_rate': 2e-08, 'rewards/chosen': 1.1543142795562744, 'rewards/rejected': -0.9720895886421204, 'rewards/accuracies': 1.0, 'rewards/margins': 2.12640380859375, 'logps/rejected': -33.55466079711914, 'logps/chosen': -8.455160140991211, 'logits/rejected': -2.8409790992736816, 'logits/chosen': -2.818726062774658, 'epoch': 0.02}
+use weighted loss
+use weighted loss
