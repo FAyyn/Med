@@ -13,6 +13,7 @@ MMedPO/scripts/train_sspo_adv.sh,这是用权重代替动态w计算loss的sspo
 MMedPO/scripts/train_sspo.sh,这是标准的sspo
 MMedPO/scripts/train_tie_sspo.sh，这是添加了动态w计算的sspo
 
+SLAKE数据集以及处理好的遮挡背景图片地址：https://drive.google.com/file/d/1YJC7KspZohlfGxylWAKc6bVxfMZKGbYS/view?usp=drive_link
 
 方式一数据集路径为：MMedPO/data/tie_dpo_dataset_method1_converted.json
 
@@ -40,6 +41,7 @@ MMedPO/scripts/train_sspo_adv.sh: SSPO using weights instead of dynamic w for lo
 MMedPO/scripts/train_sspo.sh: Standard SSPO
 MMedPO/scripts/train_tie_sspo.sh: SSPO with dynamic w calculation added
 
+SLAKE dataset and the processed occluded background image URLs：https://drive.google.com/file/d/1YJC7KspZohlfGxylWAKc6bVxfMZKGbYS/view?usp=drive_link
 
 Method 1 dataset path: MMedPO/data/tie_dpo_dataset_method1_converted.json
 
