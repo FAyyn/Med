@@ -3,10 +3,10 @@
 # Default GPUs and key parameters (can be overridden by command line)
 export CUDA_VISIBLE_DEVICES=1,2,3
 CUDA="1,2,3"
-OUTPUT_DIR="/workspace/MMedPO/MMedPO/checkpoints/sft_dpo_new_pair_slake_round2"
-DATA_PATH="/workspace/MMedPO/data/tie_dpo_dataset_slake.json"
-IMAGE_FOLDER="/workspace/MMedPO/outputs/tie_results_3/composites"
-BASE_MODEL_PATH="/workspace/MMedPO/MMedPO/SFT_Slake" # Add base model path as a variable
+OUTPUT_DIR="/workspace/MMedPO/MMedPO/checkpoints/dpo_method1_vqa_rad"
+DATA_PATH="/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_vqa_rad_aligned.json"
+IMAGE_FOLDER="/workspace/MMedPO/datasets/VQA_RAD/VQA_RAD_Image_Folder"
+BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b" # Add base model path as a variable
 
 
 # Parse command line arguments
