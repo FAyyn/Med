@@ -14,7 +14,7 @@ MODEL_PATH="/workspace/MMedPO/checkpoints/sft_model_lora_SLAKE"
 BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b"
 
 # VLLM setting
-CUDA_VISIBLE_DEVICES="1,2,3"
+CUDA_VISIBLE_DEVICES="0"
 TENSOR_PARALLEL_SIZE="1"
 USE_VLLM="True"
 
