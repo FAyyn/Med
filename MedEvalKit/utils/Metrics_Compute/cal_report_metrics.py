@@ -14,8 +14,8 @@ import os
 import nltk
 
 import numpy as np
-
-
+import gc
+import torch
 # caculate the metrics of ratescore, green score, cider, bleu, rouge, meteor
 # other metrics please refer to https://github.com/rajpurkarlab/CXR-Report-Metric
 
@@ -23,12 +23,12 @@ os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 os.environ['PYTHONIOENCODING'] = 'utf-8'
 
 # IU_XRAY,CheXpert_Plus,MIMIC_CXR
-model_name = ""
-datasets = ["IU_XRAY","CheXpert_Plus","MIMIC_CXR"]
+import os
 
+model_name = os.environ.get("MODEL_NAME", "")
+datasets_str = os.environ.get("EVAL_DATASETS", "IU_XRAY,CheXpert_Plus,MIMIC_CXR")
+datasets = [d.strip() for d in datasets_str.split(",") if d.strip()]
 
-ratescore = RaTEScore(bert_model = "RaTE-NER-Deberta",eval_model='BioLORD-2023-C')
-green_scorer = GREEN("GREEN-radllama2-7b", output_dir=".")
 
 rouge_scorer = Rouge()
 
@@ -72,9 +72,7 @@ for dataset in datasets:
                 response = sample["response"]
                 if response == "":
                         continue
-                findings = sample["findings"]
-                impression = sample["impression"]
-                golden = f"Findings: {findings} Impression: {impression}."
+                golden = sample["golden_report"]
 
 
                 tokenized_response =prep_reports([response.lower()])[0]
@@ -108,11 +106,21 @@ for dataset in datasets:
         cider_score = cider_score["avg_score"]
 
         print("begin to compute RaTE score...")
+        ratescore = RaTEScore(bert_model = "Angelakeke/RaTE-NER-Deberta",eval_model='FremyCompany/BioLORD-2023-C')
         rate_scores = ratescore.compute_score(preds, reports)
         rate_score = sum(rate_scores)/len(rate_scores)
+        del ratescore
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
 
         print("begin to compute Green score...")
+        green_scorer = GREEN("StanfordAIMI/GREEN-RadLlama2-7b", output_dir=".")
         green_mean, green_std, green_score_list, summary, result_df = green_scorer(reports, preds)
+        del green_scorer
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
 
 
         print(f"Meteor Score: {total_meteor_scores/len(datas)}")

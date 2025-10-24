@@ -18,7 +18,7 @@ os.environ["BITSANDBYTES_NOWELCOME"] = "1"
 sys.path.append('/workspace/MMedPO/MMedPO/train/dpo')
 
 try:
-    from transformers import AutoTokenizer
+    from transformers import AutoTokenizer, LlamaTokenizer
     from peft import PeftModel
     from llava.model.builder import load_pretrained_model
     print("Successfully imported transformers and PEFT")
@@ -61,7 +61,7 @@ def merge_lora_with_base_model(base_model_path, lora_checkpoint_path, output_pat
             
             # Load LoRA config
             lora_config = LlavaMistralConfig.from_pretrained(lora_checkpoint_path)
-            tokenizer = AutoTokenizer.from_pretrained(base_model_path)
+            tokenizer = LlamaTokenizer.from_pretrained(base_model_path)
             
             # Load base model with LoRA config (disable quantization for merging)
             model = LlavaMistralForCausalLM.from_pretrained(

@@ -42,6 +42,9 @@ def main():
     parser.add_argument('--model_name', type=str, default='Qwen2-VL-7B-Instruct',
                         help='name of model')
     parser.add_argument('--model_path', type=str, default="Qwen/Qwen2-VL-7B-Instruct")
+    # 新增：基座模型路径（用于LoRA检查点推理）
+    parser.add_argument('--model_base', type=str, default=None,
+                        help='base model path when using LoRA checkpoint')
 
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--cuda_visible_devices', type=str, default=None)

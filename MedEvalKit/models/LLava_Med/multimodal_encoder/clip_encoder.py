@@ -20,8 +20,9 @@ class CLIPVisionTower(nn.Module):
             self.cfg_only = CLIPVisionConfig.from_pretrained(self.vision_tower_name)
 
     def load_model(self):
+        print(f"Loading vision tower: {self.vision_tower_name}", flush=True)
         self.image_processor = CLIPImageProcessor.from_pretrained(self.vision_tower_name)
-        self.vision_tower = CLIPVisionModel.from_pretrained(self.vision_tower_name)
+        self.vision_tower = CLIPVisionModel.from_pretrained(self.vision_tower_name, use_safetensors=True)
         self.vision_tower.requires_grad_(False)
 
         self.is_loaded = True
@@ -38,6 +39,8 @@ class CLIPVisionTower(nn.Module):
 
     @torch.no_grad()
     def forward(self, images):
+        if not self.is_loaded:
+            self.load_model()
         if type(images) is list:
             image_features = []
             for image in images:

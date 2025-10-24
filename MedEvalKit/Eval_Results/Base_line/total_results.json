@@ -26,5 +26,8 @@
             "right": 443,
             "acc": 0.5299043062200957
         }
+    },
+    "IU_XRAY": {
+        "total metrics": "please use cal_report_metrics.py to generate metrics"
     }
 }

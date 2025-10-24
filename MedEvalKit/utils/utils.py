@@ -9,7 +9,7 @@ import difflib
 import asyncio
 import random
 
-import google.genai as genai
+
 from tqdm import tqdm
 from tqdm.asyncio import tqdm_asyncio
 from nltk.translate.meteor_score import single_meteor_score
@@ -442,6 +442,7 @@ class openai_llm:
 
 class Gemini:
     def __init__(self,model = "gemini-2.0-flash") -> None:
+        import google.genai as genai
         self.model = model
         self.api_key = os.environ.get("api_key")
 

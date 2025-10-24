@@ -3,10 +3,10 @@
 # Default GPUs and key parameters (can be overridden by command line)
 export CUDA_VISIBLE_DEVICES=1,2,3
 CUDA="1,2,3"
-OUTPUT_DIR="/workspace/MMedPO/MMedPO/checkpoints/dpo_method1_vqa_rad"
-DATA_PATH="/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_vqa_rad_aligned.json"
-IMAGE_FOLDER="/workspace/MMedPO/datasets/VQA_RAD/VQA_RAD_Image_Folder"
-BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b" # Add base model path as a variable
+OUTPUT_DIR="/workspace/MMedPO/MMedPO/checkpoints/sft_dpo_method1_iu_xray"
+DATA_PATH="/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_iuxray_aligned.json"
+IMAGE_FOLDER="/workspace/MMedPO/datasets/iu_xray/images"
+BASE_MODEL_PATH="/workspace/MMedPO/Models/SFT_iu_xray" # Add base model path as a variable
 
 
 # Parse command line arguments
@@ -52,10 +52,16 @@ fi
 # Ensure output directory exists
 mkdir -p "$OUTPUT_DIR"
 
+# Determine number of processes from CUDA_VISIBLE_DEVICES
+NPROC=$(echo "$CUDA_VISIBLE_DEVICES" | awk -F',' '{print NF}')
+if [[ -z "$CUDA_VISIBLE_DEVICES" || "$NPROC" -lt 1 ]]; then
+  NPROC=1
+fi
+
 cd /workspace/MMedPO/train/dpo || exit
-deepspeed --include localhost:$CUDA --master_port $((RANDOM + 30000)) ./llava/train/train_dpo.py \
+# Switched to torchrun for consistency with SFT
+torchrun --nproc_per_node=$NPROC --master_port $((RANDOM + 30000)) llava/train/train_dpo.py \
   --model_name_or_path "$BASE_MODEL_PATH" \
-  --deepspeed ./scripts/zero3.json \
   --version v1 \
   --lora_enable True \
   --lora_r 128 \

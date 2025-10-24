@@ -133,14 +133,20 @@ class LlavaMetaModel:
             def get_w(weights, keyword):
                 return {k.split(keyword + '.')[1]: v for k, v in weights.items() if keyword in k}
 
-            mm_projector_weights = torch.load(pretrain_mm_mlp_adapter, map_location='cpu')
+            try:
+                mm_projector_weights = torch.load(pretrain_mm_mlp_adapter, map_location='cpu', weights_only=True)
+            except TypeError:
+                mm_projector_weights = torch.load(pretrain_mm_mlp_adapter, map_location='cpu')
             self.mm_projector.load_state_dict(get_w(mm_projector_weights, 'mm_projector'))
 
             # also load additional learnable parameters during feature alignment
             checkpoint_folder = os.path.dirname(pretrain_mm_mlp_adapter)
             ckpts = glob(f"{checkpoint_folder}/checkpoint-*", recursive = False)
-            if len(ckpts) > 0:                
-                vision_module_weights = torch.load(f"{ckpts[-1]}/mm_projector.bin", map_location='cpu')
+            if len(ckpts) > 0:
+                try:
+                    vision_module_weights = torch.load(f"{ckpts[-1]}/mm_projector.bin", map_location='cpu', weights_only=True)
+                except TypeError:
+                    vision_module_weights = torch.load(f"{ckpts[-1]}/mm_projector.bin", map_location='cpu')
                 model_dict = get_w(vision_module_weights, 'vision_tower')
                 print(f"Loading vision module weights from {ckpts[-1]}/mm_projector.bin")
                 # print keys in model_dict
@@ -158,6 +164,7 @@ class LlavaMetaForCausalLM(ABC):
 
     def encode_images(self, images):
         image_features = self.get_model().get_vision_tower()(images)
+        image_features = image_features.to(self.get_model().dtype)
         image_features = self.get_model().mm_projector(image_features)
         return image_features
 
@@ -476,79 +483,95 @@ class LlavaMistralForCausalLM(MistralForCausalLM, LlavaMetaForCausalLM):
 
 
 
-def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, load_4bit=False, device_map="auto", device="cuda"):
-
-    kwargs = {}
-    
+def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, load_4bit=False, device_map="auto", device="cuda", **kwargs):
+    """
+    支持两种加载方式：
+    1) 直接从 `model_path` 加载完整（已合并）模型
+    2) 当 `model_base` 不为空时，先从 `model_base` 加载基座，再从 `model_path`加载 LoRA/额外权重（如 mm_projector.bin 或 non_lora_trainables.bin）
+    与 inference 中的 llava.model.builder.load_pretrained_model 行为保持一致但使用本地类。
+    """
+    # 设备/量化配置
+    runtime_kwargs = {"device_map": device_map, **kwargs}
     if device != "cuda":
-        kwargs['device_map'] = {"": device}
+        runtime_kwargs['device_map'] = {"": device}
 
     if load_8bit:
-        kwargs['load_in_8bit'] = True
+        runtime_kwargs['load_in_8bit'] = True
     elif load_4bit:
-        kwargs['load_in_4bit'] = True
-        kwargs['quantization_config'] = BitsAndBytesConfig(
+        runtime_kwargs['load_in_4bit'] = True
+        runtime_kwargs['quantization_config'] = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
             bnb_4bit_quant_type='nf4'
         )
     else:
-        kwargs['torch_dtype'] = torch.float16
-    
-    if 'llava' in model_name.lower():
-        # Load LLaVA model
-            if 'mistral' in model_name.lower():
-                tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False, legacy=True)
-                model = LlavaMistralForCausalLM.from_pretrained(
-                    model_path,
-                    low_cpu_mem_usage=False,
-                    **kwargs
-                )
+        runtime_kwargs['torch_dtype'] = torch.float16
+
+    # Tokenizer 优先使用 base（如果提供）
+    if model_base is not None:
+        tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False)
     else:
-        # Load language model
-        if model_base is not None:
-            # PEFT model
-            from peft import PeftModel
-            tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False)
-            model = AutoModelForCausalLM.from_pretrained(model_base, low_cpu_mem_usage=True, **kwargs)
-            print(f"Loading LoRA weights from {model_path}")
-            model = PeftModel.from_pretrained(model, model_path)
-            print(f"Merging weights")
-            model = model.merge_and_unload()
-            print('Convert to FP16...')
-            model.to(torch.float16)
-        else:
-            use_fast = False
-            if 'mpt' in model_name.lower():
-                tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=True)
-                model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, trust_remote_code=True, **kwargs)
-            else:
-                tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
-                model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
+        tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
 
     image_processor = None
 
-    if 'llava' in model_name.lower(): # or 'mistral' in model_name.lower():
-        mm_use_im_start_end = getattr(model.config, "mm_use_im_start_end", False)
-        mm_use_im_patch_token = getattr(model.config, "mm_use_im_patch_token", True)
-        if mm_use_im_patch_token:
-            tokenizer.add_tokens([DEFAULT_IMAGE_PATCH_TOKEN], special_tokens=True)
-        if mm_use_im_start_end:
-            tokenizer.add_tokens([DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN], special_tokens=True)
-        model.resize_token_embeddings(len(tokenizer))
+    # LLaVA 系列（mistral）
+    if 'llava' in model_name.lower():
+        from transformers import CLIPImageProcessor
+        if model_base is not None:
+            # 从基座加载模型
+            model = LlavaMistralForCausalLM.from_pretrained(
+                model_base, low_cpu_mem_usage=True, **runtime_kwargs
+            )
+            # 叠加 mm_projector 或 non_lora_trainables 权重
+            mm_projector_path = os.path.join(model_path, 'mm_projector.bin')
+            non_lora_path = os.path.join(model_path, 'non_lora_trainables.bin')
 
-        vision_tower = model.get_vision_tower()
-        if not vision_tower.is_loaded:
-            vision_tower.load_model()
-        vision_tower.to(device=device, dtype=torch.float16)
-        model.model.mm_projector.to(device=device, dtype=torch.float16)
-        model.to(device=device, dtype=torch.float16)
-        image_processor = vision_tower.image_processor
+            loaded_any = False
+            if os.path.exists(mm_projector_path):
+                try:
+                    mm_projector_weights = torch.load(mm_projector_path, map_location='cpu', weights_only=True)
+                except TypeError:
+                    mm_projector_weights = torch.load(mm_projector_path, map_location='cpu')
+                # 统一到 fp16，避免 dtype 冲突
+                mm_projector_weights = {k: v.to(torch.float16) for k, v in mm_projector_weights.items()}
+                model.load_state_dict(mm_projector_weights, strict=False)
+                loaded_any = True
+            if os.path.exists(non_lora_path):
+                try:
+                    non_lora_state_dict = torch.load(non_lora_path, map_location='cpu', weights_only=True)
+                except TypeError:
+                    non_lora_state_dict = torch.load(non_lora_path, map_location='cpu')
+                model.load_state_dict(non_lora_state_dict, strict=False)
+                loaded_any = True
+            if not loaded_any:
+                print(f'Warning: No mm_projector.bin or non_lora_trainables.bin found in {model_path}; proceeding with base only.')
+        else:
+            # 直接从 model_path 加载完整模型（已合并）
+            cfg_pretrained = AutoConfig.from_pretrained(model_path)
+            model = LlavaMistralForCausalLM.from_pretrained(
+                model_path, low_cpu_mem_usage=True, config=cfg_pretrained, **runtime_kwargs
+            )
 
-    if hasattr(model.config, "max_sequence_length"):
-        context_len = model.config.max_sequence_length
+        # 图像处理器来自 config.mm_vision_tower 或默认 CLIP
+        vision_tower_path = getattr(model.config, 'mm_vision_tower', None)
+        if vision_tower_path is not None:
+            image_processor = CLIPImageProcessor.from_pretrained(vision_tower_path)
+        else:
+            try:
+                image_processor = CLIPImageProcessor.from_pretrained("openai/clip-vit-large-patch14-336")
+            except Exception:
+                image_processor = None
     else:
-        context_len = 2048
+        # 其它纯文本模型的兜底（当前项目主要用 LLaVA-Med）
+        model = AutoModelForCausalLM.from_pretrained(
+            model_path, low_cpu_mem_usage=True, **runtime_kwargs
+        )
+        image_processor = None
+
+    # 生成配置
+    model.generation_config.pad_token_id = tokenizer.pad_token_id
+    context_len = getattr(model.config, 'max_position_embeddings', 2048)
 
     return tokenizer, model, image_processor, context_len

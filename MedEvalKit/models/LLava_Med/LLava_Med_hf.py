@@ -45,7 +45,7 @@ class LLavaMed:
         super().__init__()
         tokenizer, model, image_processor, context_len = load_pretrained_model(
         model_path=model_path,
-        model_base=None,
+        model_base=args.model_base,
         model_name='llava-med-v1.5-mistral-7b'
     )
         model.generation_config.pad_token_id = tokenizer.pad_token_id

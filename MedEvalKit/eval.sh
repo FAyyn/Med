@@ -2,20 +2,21 @@
 export HF_ENDPOINT=https://hf-mirror.com
 
 # Available datasets: MMMU-Medical-test,MMMU-Medical-val,PMC_VQA,MedQA_USMLE,MedMCQA,PubMedQA,OmniMedVQA,Medbullets_op4,Medbullets_op5,MedXpertQA-Text,MedXpertQA-MM,SuperGPQA,HealthBench,IU_XRAY,CheXpert_Plus,MIMIC_CXR,CMB,CMExam,CMMLU,MedQA_MCMLE,VQA_RAD,SLAKE,PATH_VQA,MedFrameQA,Radrestruct
-EVAL_DATASETS="VQA_RAD" 
+EVAL_DATASETS="SLAKE" 
 # 修复：对于VQA_RAD数据集，使用具体的JSONL文件路径而不是目录路径
-DATASETS_PATH="/workspace/MMedPO/datasets/VQA_RAD/VQA_RAD_DataSet_Public_test.jsonl"
-OUTPUT_PATH="/workspace/MMedPO/MedEvalKit/Eval_Results/DPO_method1_vqa_rad"
+DATASETS_PATH="/workspace/MMedPO/datasets"
+OUTPUT_PATH="/workspace/MMedPO/MedEvalKit/Eval_Results/SFT_SLAKE_SUEP"
 # Available models: TestModel,Qwen2-VL,Qwen2.5-VL,BiMediX2,LLava_Med,Huatuo,InternVL,Llama-3.2,LLava,Janus,HealthGPT,BiomedGPT,Vllm_Text,MedGemma,Med_Flamingo,MedDr
 MODEL_NAME="LLava_Med"
-MODEL_PATH="/workspace/MMedPO/Models/DPO_method1_vqa_rad"
-
-
+# LoRA 检查点路径（包含 mm_projector.bin 或 non_lora_trainables.bin）
+MODEL_PATH="/workspace/MMedPO/checkpoints/sft_model_lora_SLAKE"
+# 基座模型（如 llava-med-v1.5-mistral-7b 合并或原始基座）
+BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b"
 
 # VLLM setting
-CUDA_VISIBLE_DEVICES="1"
+CUDA_VISIBLE_DEVICES="1,2,3"
 TENSOR_PARALLEL_SIZE="1"
-USE_VLLM="False"
+USE_VLLM="True"
 
 # Evaluation setting
 SEED=42
@@ -53,6 +54,7 @@ python eval.py \
     --output_path "$OUTPUT_PATH" \
     --model_name "$MODEL_NAME" \
     --model_path "$MODEL_PATH" \
+    --model_base "$BASE_MODEL_PATH" \
     --seed $SEED \
     --cuda_visible_devices "$CUDA_VISIBLE_DEVICES" \
     --tensor_parallel_size "$TENSOR_PARALLEL_SIZE" \

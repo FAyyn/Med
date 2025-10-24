@@ -27,14 +27,14 @@ class IU_XRAY(BaseDataset):
     
     def load_data(self):
         dataset_path = self.dataset_path
-        json_path = os.path.join(dataset_path,"test.json")
+        json_path = os.path.join(dataset_path,"test.jsonl")
 
         with open(json_path,"r") as f:
-            dataset = json.load(f)
+            dataset = [json.loads(line) for line in f]
 
         for idx,sample in tqdm(enumerate(dataset)):
             if idx % self.num_chunks == self.chunk_idx:
-                if sample["findings"].strip() == "" and sample["impression"].strip() == "":
+                if not sample.get("response") or sample["response"].strip() == "":
                     continue
                 sample = self.construct_messages(sample)
                 self.samples.append(sample)
@@ -42,16 +42,15 @@ class IU_XRAY(BaseDataset):
         return self.samples
 
     def construct_messages(self,sample):
-        image_root = os.path.join(self.dataset_path,"images")
-        images = sample["image"]
-        images = [Image.open(os.path.join(image_root,image)) for image in images]
-        findings = sample["findings"]
-        impression = sample["impression"]
-
-        findings = "None" if findings.strip() == "" else findings
-        impression = "None" if impression.strip() == "" else impression
+        image_root = os.path.join(os.path.dirname(self.dataset_path), "IU_XRAY", "images")
+        images = sample["images"]
+        # The image path in jsonl is like /iu_xray/image/CXR3030_IM-1405/0.png
+        # We need to extract CXR3030_IM-1405/0.png
+        images = [Image.open(os.path.join(image_root, "/".join(image.lstrip('/').split('/')[2:]))) for image in images]
         
-        prompt = get_report_generation_promp()
+        sample["golden_report"] = sample["response"]
+        
+        prompt = get_report_generation_prompt()
 
         messages = {"prompt":prompt,"images":images}
         sample["messages"] = messages
@@ -66,9 +65,7 @@ class IU_XRAY(BaseDataset):
 
         for i,sample in enumerate(out_samples):
             response = sample["response"]
-            findings = sample["findings"]
-            impression = sample["impression"]
-            golden = f"Findings: {findings} Impression: {impression}."
+            golden = sample["golden_report"]
 
             # 生成唯一的study_id
             study_id = f"study_{i+1}"
