@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Default GPUs and key parameters (can be overridden by command line)
-export CUDA_VISIBLE_DEVICES=1,2,3
-CUDA="1,2,3"
-OUTPUT_DIR="/workspace/MMedPO/MMedPO/checkpoints/sft_dpo_method1_iu_xray"
-DATA_PATH="/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_iuxray_aligned.json"
-IMAGE_FOLDER="/workspace/MMedPO/datasets/iu_xray/images"
-BASE_MODEL_PATH="/workspace/MMedPO/Models/SFT_iu_xray" # Add base model path as a variable
+export CUDA_VISIBLE_DEVICES=2,3
+CUDA="2,3"
+OUTPUT_DIR="/workspace/MMedPO/MMedPO/checkpoints/sft_dpo_method1_Slake"
+DATA_PATH="/workspace/MMedPO/MMedPO/data/tie_dpo_dataset_method1_Slake.json"
+IMAGE_FOLDER="/workspace/MMedPO/datasets/SLAKE/imgs"
+BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b" # Add base model path as a variable
 
 
 # Parse command line arguments
@@ -98,7 +98,8 @@ torchrun --nproc_per_node=$NPROC --master_port $((RANDOM + 30000)) llava/train/t
   --gradient_checkpointing True \
   --dataloader_num_workers 2 \
   --lazy_preprocess True \
-  --remove_unused_columns False
+  --remove_unused_columns False \
+  --ddp_find_unused_parameters False
 
 
 
