@@ -13,9 +13,10 @@ OUTPUT_PATH="/workspace/MMedPO/MedEvalKit/Eval_Results/SFT_SLAKE_UCD"
 # Available models: TestModel,Qwen2-VL,Qwen2.5-VL,BiMediX2,LLava_Med,Huatuo,InternVL,Llama-3.2,LLava,Janus,HealthGPT,BiomedGPT,Vllm_Text,MedGemma,Med_Flamingo,MedDr
 MODEL_NAME="LLava_Med"
 # Path to LoRA checkpoint (contains mm_projector.bin or non_lora_trainables.bin)
+# Now you could use the MODEL_PATH to evaluate the checkpoint
 MODEL_PATH="/workspace/MMedPO/checkpoints/sft_model_lora_SLAKE"
 
-# Now you could use the MODEL_PATH to evaluate the checkpoint
+
 # Path to base model (e.g., llava-med-v1.5-mistral-7b merged or original base)
 BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b"
 
