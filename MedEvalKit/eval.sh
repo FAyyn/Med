@@ -3,15 +3,23 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 # Available datasets: MMMU-Medical-test,MMMU-Medical-val,PMC_VQA,MedQA_USMLE,MedMCQA,PubMedQA,OmniMedVQA,Medbullets_op4,Medbullets_op5,MedXpertQA-Text,MedXpertQA-MM,SuperGPQA,HealthBench,IU_XRAY,CheXpert_Plus,MIMIC_CXR,CMB,CMExam,CMMLU,MedQA_MCMLE,VQA_RAD,SLAKE,PATH_VQA,MedFrameQA,Radrestruct
 EVAL_DATASETS="SLAKE" 
-# 修复：对于VQA_RAD数据集，使用具体的JSONL文件路径而不是目录路径
+# Fix: For the VQA_RAD dataset, use the specific JSONL file path instead of the directory path
 DATASETS_PATH="/workspace/MMedPO/datasets"
+# The DATASETS_PATH should be the parents directory of the dataset directory
+# E.g., if the dataset directory is /workspace/MMedPO/datasets/SLAKE, then the DATASETS_PATH should be /workspace/MMedPO/datasets
+# And you should rename your slake1.0 folder to SLAKE, this was decided by the EVAL_DATASETS="SLAKE"
+
 OUTPUT_PATH="/workspace/MMedPO/MedEvalKit/Eval_Results/SFT_SLAKE_UCD"
 # Available models: TestModel,Qwen2-VL,Qwen2.5-VL,BiMediX2,LLava_Med,Huatuo,InternVL,Llama-3.2,LLava,Janus,HealthGPT,BiomedGPT,Vllm_Text,MedGemma,Med_Flamingo,MedDr
 MODEL_NAME="LLava_Med"
-# LoRA 检查点路径（包含 mm_projector.bin 或 non_lora_trainables.bin）
+# Path to LoRA checkpoint (contains mm_projector.bin or non_lora_trainables.bin)
 MODEL_PATH="/workspace/MMedPO/checkpoints/sft_model_lora_SLAKE"
-# 基座模型（如 llava-med-v1.5-mistral-7b 合并或原始基座）
+
+# Now you could use the MODEL_PATH to evaluate the checkpoint
+# Path to base model (e.g., llava-med-v1.5-mistral-7b merged or original base)
 BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b"
+
+# BASE_MODEL_PATH could be online path in huggingface too.
 
 # VLLM setting
 CUDA_VISIBLE_DEVICES="0,1"
