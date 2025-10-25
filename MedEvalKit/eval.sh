@@ -5,7 +5,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 EVAL_DATASETS="SLAKE" 
 # 修复：对于VQA_RAD数据集，使用具体的JSONL文件路径而不是目录路径
 DATASETS_PATH="/workspace/MMedPO/datasets"
-OUTPUT_PATH="/workspace/MMedPO/MedEvalKit/Eval_Results/SFT_SLAKE_SUEP"
+OUTPUT_PATH="/workspace/MMedPO/MedEvalKit/Eval_Results/SFT_SLAKE_UCD"
 # Available models: TestModel,Qwen2-VL,Qwen2.5-VL,BiMediX2,LLava_Med,Huatuo,InternVL,Llama-3.2,LLava,Janus,HealthGPT,BiomedGPT,Vllm_Text,MedGemma,Med_Flamingo,MedDr
 MODEL_NAME="LLava_Med"
 # LoRA 检查点路径（包含 mm_projector.bin 或 non_lora_trainables.bin）
@@ -14,9 +14,9 @@ MODEL_PATH="/workspace/MMedPO/checkpoints/sft_model_lora_SLAKE"
 BASE_MODEL_PATH="/workspace/llava-med-v1.5-mistral-7b"
 
 # VLLM setting
-CUDA_VISIBLE_DEVICES="0"
+CUDA_VISIBLE_DEVICES="0,1"
 TENSOR_PARALLEL_SIZE="1"
-USE_VLLM="True"
+USE_VLLM="False"
 
 # Evaluation setting
 SEED=42
