@@ -4,10 +4,7 @@ The evaluation script has been changed, I added the checkpoint supply, now you c
 
 I also leaved some comments in the scripts about the dataset path, I hope they would help you.
 
-If there are any other questions you could leave a comment in the issue, or you could contact me via e-mail and wechat.
-
-my email address is: 996598441@qq.com
-wechat account: w996598441
+If there are any other questions you could leave a comment in the issue.
 
 I have stored the model training code in the MMedPO directory, while the model evaluation code resides in the MedEvalKit directory.
 
