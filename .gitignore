@@ -1,0 +1,23 @@
+
+# extra
+backup
+curation/Sample_Zero-Shot_Grounding_RSNA/model_weights
+curation/Sample_Zero-Shot_Grounding_RSNA/model_weights/checkpoint_final.pth
+*.pth
+
+train/dpo/docs
+train/dpo/playground
+train/dpo/wandb
+MMedPO/outputs/
+MMedPO/checkpoint/
+MMedPO/models
+MMedPO/wandb/
+MMedPO/data/iu_xray
+MMedPO/data/SLAKE
+
+MMedPO/scripts/yolov8n.pt
+
+# python venv
+.venv/
+__pycache__/
+*.pyc
