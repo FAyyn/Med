@@ -1,0 +1,112 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[rebuttal]{cvpr}
+
+% Include other packages here, before hyperref.
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+% Import additional packages in the preamble file, before hyperref
+\input{preamble}
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+
+% If you wish to avoid re-using figure, table, and equation numbers from
+% the main paper, please uncomment the following and change the numbers
+% appropriately.
+%\setcounter{figure}{2}
+%\setcounter{table}{1}
+%\setcounter{equation}{2}
+
+% If you wish to avoid re-using reference numbers from the main paper,
+% please uncomment the following and change the counter value to the
+% number of references you have in the main paper (here, 100).
+%\makeatletter
+%\apptocmd{\thebibliography}{\global\c@NAT@ctr 100\relax}{}{}
+%\makeatother
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\paperID{*****} % *** Enter the Paper ID here
+\def\confName{CVPR}
+\def\confYear{2026}
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{CaMedPO: Causal Medical Preference Optimization for Debiasing Medical Vision-Language Models}  % **** Enter the paper title here
+
+\maketitle
+\thispagestyle{empty}
+\appendix
+
+%%%%%%%%% BODY TEXT - ENTER YOUR RESPONSE BELOW
+\noindent
+We thank all reviewers for their thoughtful and constructive feedback. We address the concerns raised by each reviewer below.
+
+\noindent \textbf{\textcolor{purple}{\underline{Reviewer bqeb: }}}
+
+\textcolor{purple}{\textbf{Major Weakness 1:}} \textit{Similarity to prior causal work}
+
+We appreciate noting the connection to Niu et al. (2021 CVPR) and confirm our paper embeds Pearl's causal decomposition into DPO for symmetric preference loss with full derivations in the manuscript.
+
+\textcolor{purple}{\textbf{Major Weakness 2:}} \textit{Causal graph rigor}
+
+We appreciate the emphasis on causal rigor; the graph focuses on I, B, L, E, R as actionable factors with prior knowledge in pretrained parameters and noise handled in effect estimation.
+
+\textcolor{purple}{\textbf{Major Weakness 3:}} \textit{Transferability tests}
+
+The supplement (Section 10.2) shows CaMedPO improves LLaVA-Med++ by 5.1 points on VQA-RAD closed and Med-Gemma by 2.4 points, with the latter's smaller gain reflecting stronger pretraining.
+
+\textcolor{purple}{\textbf{Minor Weakness 1:}} \textit{Grammar and typos}
+
+We thank the reviewer for spotting editorial issues and will thoroughly proofread the manuscript.
+
+\textcolor{purple}{\textbf{Minor Weakness 2:}} \textit{Ablation detail}
+
+We respectfully point the reviewer to Table 2, main Section 5.3, and supplement Sections 10.1–10.2 for comprehensive ablations and comparisons.
+
+\noindent \textbf{\textcolor{orange}{\underline{Reviewer Z1tg: }}}
+
+\textcolor{orange}{\textbf{Major Weakness 1:}} \textit{Theory-implementation gap}
+Counterfactual ablations in Table 2 and supplement validate reduced background reliance. If additional diagnostics would be useful, we would be pleased to run background-randomization and lesion-removal tests.
+
+\textcolor{orange}{\textbf{Major Weakness 2:}} \textit{Evidence for background suppression}
+[Additional experiments and analysis]
+
+\textcolor{orange}{\textbf{Major Weakness 3:}} \textit{Theory vs objective}
+We appreciate this point. We use Lingshu LLM toolkit for clinical correctness beyond BLEU/ROUGE/METEOR, following recent structured assessment trends. If requested, we can also report CheXbert and RadGraph scores with expert review.
+
+\textcolor{orange}{\textbf{Major Weakness 4:}} \textit{Medical-fact metrics}
+[Additional evaluation metrics]
+
+\textcolor{orange}{\textbf{Major Weakness 5:}} \textit{Data reproducibility}
+As mentioned above, reproducibility details are available in the code repository.
+
+\textcolor{orange}{\textbf{Major Weakness 6:}} \textit{Counterfactual processing}
+
+
+\textcolor{orange}{\textbf{Minor Weaknesses 1-4:}} \textit{Terminology, details, qualitative}
+Thank you for highlighting this. Implementation details are provided in the methods and repository. We will provide sensitivity analyses for noise strength, perturbation types, and mask processing variants, along with corrected formula presentations for the causal-weighted DPO in the supplement.
+
+\noindent \textbf{\textcolor{blue}{\underline{Reviewer tK5W: }}}
+
+\textcolor{blue}{\textbf{Major Weaknesses 1-3:}} \textit{Segmentation, artifacts, generalization}
+
+We thank the reviewer for the concern about Med-SAM segmentation and composite-image artifacts. On Med-SAM segmentation reliability, we use Med-SAM guided by clinical queries to localize lesion regions and base preference-pair construction on those localizations.On the mask-and-fill procedure, as described above we generate background-only images by filling lesion masks with zero-valued pixels and stitch background-only and original images to form composite pairs. We will report ablation studies in the supplement that probe noise strength, perturbation types and mask-processing variants.On large-scale external validation, due to current computational limits we adopted the more compute-efficient DPO framework instead of continued large-scale full-model finetuning; we plan to expand cross-site evaluations when resources permit.
+
+\textcolor{blue}{\textbf{Minor Weakness:}} \textit{Equation clarity}
+[Response providing step-by-step mathematical justification with improved explanations]
+
+%%%%%%%%% REFERENCES
+{
+    \small
+    \bibliographystyle{ieeenat_fullname}
+    \bibliography{main}
+}
+
+\end{document}

@@ -21,3 +21,16 @@ MMedPO/scripts/yolov8n.pt
 .venv/
 __pycache__/
 *.pyc
+
+# ===== 评测工具中的模型权重与中间产物 =====
+baselines/**/.venv/
+evaluation/CheXbert/BiomedVLP-CXR-BERT-general/
+evaluation/CheXbert/radgraph-xl.tar.gz
+evaluation/CheXbert/output/
+*.tar.gz
+*.ckpt
+*.bin
+*.safetensors
+
+# 编译产物（超过 GitHub 100MB 单文件限制）
+paper/templates/ECCV/main.pdf

@@ -1,0 +1,218 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Li2023LLaVAMed,Moor2023MedFlamingo}
+\citation{Royer2024MultiMedEval}
+\citation{rafailov2023direct,Zhu2025MMedPO}
+\@writefile{toc}{\contentsline {title}{ Causality-Aware Preference Optimization for Aligning \unskip \ \ignorespaces Medical Vision Language Models}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\authcount {1}}
+\@writefile{toc}{\contentsline {author}{Anonymous ECCV 2026{} Submission}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1.1}{}}
+\newlabel{sec:intro@cref}{{[section][1][]1}{[1][1][]1}}
+\citation{Christiano2017RLHF,Schulman2017PPO,ouyang2022training,Ethayarajh2024KTO,liustatistical,hong2024reference,meng2024simpo,wu2025selfplay,liu2025survey}
+\citation{banerjee2024direct,sun2024stllava,hein2024preference}
+\citation{Zhu2025MMedPO}
+\citation{Zhi2025MedGR2}
+\citation{Royer2024MultiMedEval,Cui2023GPT4VHallucination}
+\citation{pearl2009causality}
+\citation{shao2024knowledge,li2024multimodal,zhou2025learning}
+\citation{liu2025crcl}
+\citation{liu2022contextual}
+\citation{wang2022causal,wei2022causal}
+\citation{liu2025causal}
+\citation{wang2025beyond}
+\citation{xu2025structure}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Effects of spurious causation on inference.\relax }}{2}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:intro}{{1}{2}{Effects of spurious causation on inference.\relax }{figure.caption.2}{}}
+\newlabel{fig:intro@cref}{{[figure][1][]1}{[1][1][]2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Works}{2}{section.1.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Works}{section.1.2}{}}
+\newlabel{sec:related@cref}{{[section][2][]2}{[1][2][]2}}
+\citation{rafailov2023direct}
+\citation{pearl2009causality}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  (a) Example of causal graph. (b) Examples of counterfactual notations.\relax }}{3}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:c1}{{2}{3}{(a) Example of causal graph. (b) Examples of counterfactual notations.\relax }{figure.caption.3}{}}
+\newlabel{fig:c1@cref}{{[figure][2][]2}{[1][3][]3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Prelimenaries}{3}{section.1.3}\protected@file@percent }
+\newlabel{sec:pre}{{3}{3}{Prelimenaries}{section.1.3}{}}
+\newlabel{sec:pre@cref}{{[section][3][]3}{[1][3][]3}}
+\newlabel{eq:dpo_loss}{{1}{3}{Prelimenaries}{equation.1.3.1}{}}
+\newlabel{eq:dpo_loss@cref}{{[equation][1][]1}{[1][3][]3}}
+\citation{pearl2014interpretation}
+\citation{pearl2016causal}
+\citation{zech2018variable}
+\citation{irvin2019chexpert}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison between (a) SCM of Med-LVLM and (b) Counterfactual SCM of Med-LVLM.\relax }}{4}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:scm}{{3}{4}{Comparison between (a) SCM of Med-LVLM and (b) Counterfactual SCM of Med-LVLM.\relax }{figure.caption.4}{}}
+\newlabel{fig:scm@cref}{{[figure][3][]3}{[1][4][]4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{4}{section.1.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{4}{Methodology}{section.1.4}{}}
+\newlabel{sec:method@cref}{{[section][4][]4}{[1][4][]4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Cause-Effect Look in Preference Optimization}{4}{subsection.1.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Causal Analysis}{4}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Causal Reward}{5}{section*.6}\protected@file@percent }
+\newlabel{eq:tie}{{9}{5}{Causal Reward}{equation.1.4.9}{}}
+\newlabel{eq:tie@cref}{{[equation][9][]9}{[1][5][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Theoretical Analysis}{6}{subsection.1.4.2}\protected@file@percent }
+\newlabel{sec:theory}{{4.2}{6}{Theoretical Analysis}{subsection.1.4.2}{}}
+\newlabel{sec:theory@cref}{{[subsection][2][4]4.2}{[1][5][]6}}
+\newlabel{eq:causal_reward_def}{{11}{6}{Theoretical Analysis}{equation.1.4.11}{}}
+\newlabel{eq:causal_reward_def@cref}{{[equation][11][]11}{[1][6][]6}}
+\newlabel{eq:preference}{{13}{6}{Theoretical Analysis}{equation.1.4.13}{}}
+\newlabel{eq:preference@cref}{{[equation][13][]13}{[1][6][]6}}
+\citation{Zhu2025MMedPO}
+\citation{achiam2023gpt}
+\newlabel{def:causal_optimal}{{1}{7}{Theoretical Analysis}{definition.1.1}{}}
+\newlabel{def:causal_optimal@cref}{{[definition][1][1]1}{[1][7][]7}}
+\newlabel{thm:tie_convergence}{{1}{7}{Theoretical Analysis}{theorem.1.4.1}{}}
+\newlabel{thm:tie_convergence@cref}{{[theorem][1][1]1}{[1][7][]7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The overview of CaMedPO that consists of the causal preference pair curation and causal preference optimization.\relax }}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:structure}{{4}{7}{The overview of CaMedPO that consists of the causal preference pair curation and causal preference optimization.\relax }{figure.caption.7}{}}
+\newlabel{fig:structure@cref}{{[figure][4][]4}{[1][7][]7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Implementation Instantiation}{7}{subsection.1.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Causal Preference Pair Curation}{7}{section*.8}\protected@file@percent }
+\citation{lau2018dataset}
+\citation{liu2021slake}
+\citation{demner2015preparing}
+\citation{johnson2019mimic}
+\citation{Li2023LLaVAMed}
+\citation{sun2024stllava}
+\citation{rafailov2023direct}
+\citation{Zhu2025MMedPO}
+\citation{wang2024mdpo}
+\citation{wu2025selfplay}
+\citation{Zhu2025MMedPO}
+\@writefile{toc}{\contentsline {subsubsection}{Causal Preference Optimization}{9}{section*.9}\protected@file@percent }
+\newlabel{eq:final_loss}{{17}{9}{Causal Preference Optimization}{equation.1.4.17}{}}
+\newlabel{eq:final_loss@cref}{{[equation][17][]17}{[1][9][]9}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments}{9}{section.1.5}\protected@file@percent }
+\newlabel{sec:exp}{{5}{9}{Experiments}{section.1.5}{}}
+\newlabel{sec:exp@cref}{{[section][5][]5}{[1][9][]9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Experimental Setups}{9}{subsection.1.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Main Results}{9}{subsection.1.5.2}\protected@file@percent }
+\citation{dedeo2020radgraph}
+\citation{Zhu2025MMedPO}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Performance comparison on medical VQA and report generation tasks covering SLAKE, VQA-RAD, and IU-XRay datasets. For open-ended questions, we report recall (Open); for closed-ended questions, accuracy (Closed). The BLEU score denotes the average of BLEU-1/2/3/4. +SFT indicates that the model is first fine-tuned with SFT before applying the corresponding baselines. The best and second-best results are highlighted in \textbf  {bold} and \underline  {underlined}, respectively.\relax }}{10}{table.caption.10}\protected@file@percent }
+\newlabel{tab:main_results}{{1}{10}{Performance comparison on medical VQA and report generation tasks covering SLAKE, VQA-RAD, and IU-XRay datasets. For open-ended questions, we report recall (Open); for closed-ended questions, accuracy (Closed). The BLEU score denotes the average of BLEU-1/2/3/4. +SFT indicates that the model is first fine-tuned with SFT before applying the corresponding baselines. The best and second-best results are highlighted in \textbf {bold} and \underline {underlined}, respectively.\relax }{table.caption.10}{}}
+\newlabel{tab:main_results@cref}{{[table][1][]1}{[1][9][]10}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces RadGraph F1 scores on IU-Xray dataset.\relax }}{10}{table.caption.11}\protected@file@percent }
+\newlabel{tab:radgraph}{{2}{10}{RadGraph F1 scores on IU-Xray dataset.\relax }{table.caption.11}{}}
+\newlabel{tab:radgraph@cref}{{[table][2][]2}{[1][10][]10}}
+\citation{wang2024mdpo}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Ablation study results on VQA-RAD and IU-XRay. “w/” and “w/o” denote with and without, respectively. $^\text  {s}$ denotes the model enhanced with SFT.\relax }}{11}{table.caption.12}\protected@file@percent }
+\newlabel{tab:ablation}{{3}{11}{Ablation study results on VQA-RAD and IU-XRay. “w/” and “w/o” denote with and without, respectively. $^\text {s}$ denotes the model enhanced with SFT.\relax }{table.caption.12}{}}
+\newlabel{tab:ablation@cref}{{[table][3][]3}{[1][11][]11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Analysis}{11}{subsection.1.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Validation of Causal Mechanism. We evaluate robustness against distribution shifts (background swap/noise) and verify if the model truly relies on lesion features (composite input consistency). $t$ denotes the model under testing.\relax }}{12}{table.caption.13}\protected@file@percent }
+\newlabel{tab:causal_validation}{{4}{12}{Validation of Causal Mechanism. We evaluate robustness against distribution shifts (background swap/noise) and verify if the model truly relies on lesion features (composite input consistency). $t$ denotes the model under testing.\relax }{table.caption.13}{}}
+\newlabel{tab:causal_validation@cref}{{[table][4][]4}{[1][11][]12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Ablation Study}{12}{subsection.1.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Qualitative Analysis}{12}{section.1.6}\protected@file@percent }
+\bibstyle{splncs04}
+\bibdata{main}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  CaMedPO generates reasonable responses. \relax }}{13}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:case}{{5}{13}{CaMedPO generates reasonable responses. \relax }{figure.caption.14}{}}
+\newlabel{fig:case@cref}{{[figure][5][]5}{[1][12][]13}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{13}{section.1.7}\protected@file@percent }
+\newlabel{sec:con}{{7}{13}{Conclusion}{section.1.7}{}}
+\newlabel{sec:con@cref}{{[section][7][]7}{[1][13][]13}}
+\citation{Christiano2017RLHF}
+\citation{Schulman2017PPO}
+\citation{Bradley1952BT}
+\citation{rafailov2023direct}
+\@writefile{toc}{\contentsline {section}{\numberline {S1}Detailed Preliminaries}{1}{section.1.1}\protected@file@percent }
+\newlabel{supp:pref_optim}{{S1}{1}{Detailed Preliminaries}{section.1.1}{}}
+\newlabel{supp:pref_optim@cref}{{[section][1][]S1}{[1][1][]1}}
+\newlabel{eq:dpo_loss}{{18}{1}{Detailed Preliminaries}{equation.1.1.18}{}}
+\newlabel{eq:dpo_loss@cref}{{[equation][18][]18}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {S2}Proof of Theorem \ref  {thm:tie_convergence}}{1}{section.1.2}\protected@file@percent }
+\newlabel{supp:theory}{{S2}{1}{Proof of Theorem \ref {thm:tie_convergence}}{section.1.2}{}}
+\newlabel{supp:theory@cref}{{[section][2][]S2}{[1][1][]1}}
+\newlabel{ass:bounded}{{S2}{1}{Proof of Theorem \ref {thm:tie_convergence}}{section.1.2}{}}
+\newlabel{ass:bounded@cref}{{[section][2][]S2}{[1][1][]1}}
+\newlabel{lem:bias}{{1}{1}{Proof of Theorem \ref {thm:tie_convergence}}{lemma.1.1}{}}
+\newlabel{lem:bias@cref}{{[lemma][1][1]1}{[1][1][]1}}
+\newlabel{lem:onestep}{{2}{2}{Proof of Theorem \ref {thm:tie_convergence}}{lemma.1.2}{}}
+\newlabel{lem:onestep@cref}{{[lemma][2][1]2}{[1][2][]2}}
+\newlabel{thm:biasfloor}{{2}{3}{Proof of Theorem \ref {thm:tie_convergence}}{theorem.1.2.2}{}}
+\newlabel{thm:biasfloor@cref}{{[theorem][2][1]2}{[1][3][]3}}
+\newlabel{cor:gap}{{1}{3}{Proof of Theorem \ref {thm:tie_convergence}}{corollary.1.1}{}}
+\newlabel{cor:gap@cref}{{[corollary][1][1]1}{[1][3][]3}}
+\@writefile{toc}{\contentsline {paragraph}{Interpretation.}{3}{section*.15}\protected@file@percent }
+\citation{liu2021slake}
+\citation{Lau2018VQARAD}
+\citation{johnson2019mimic}
+\citation{demner2015preparing}
+\citation{liu2021slake}
+\citation{Lau2018VQARAD}
+\citation{demner2015preparing}
+\citation{johnson2019mimic}
+\citation{sun2024stllava}
+\citation{wang2024mdpo}
+\citation{wu2025selfplay}
+\citation{Zhu2025MMedPO}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Medical evaluation benchmarks and statistics\relax }}{4}{table.caption.16}\protected@file@percent }
+\newlabel{tab:data_splits}{{5}{4}{Medical evaluation benchmarks and statistics\relax }{table.caption.16}{}}
+\newlabel{tab:data_splits@cref}{{[table][5][]5}{[1][4][]4}}
+\@writefile{toc}{\contentsline {section}{\numberline {S3}Data}{4}{section.1.3}\protected@file@percent }
+\newlabel{supp:data}{{S3}{4}{Data}{section.1.3}{}}
+\newlabel{supp:data@cref}{{[section][3][]S3}{[1][3][]4}}
+\@writefile{toc}{\contentsline {section}{\numberline {S4}Baselines}{4}{section.1.4}\protected@file@percent }
+\newlabel{supp:baselines}{{S4}{4}{Baselines}{section.1.4}{}}
+\newlabel{supp:baselines@cref}{{[section][4][]S4}{[1][4][]4}}
+\@writefile{toc}{\contentsline {section}{\numberline {S5}Additional Experimental Results}{5}{section.1.5}\protected@file@percent }
+\newlabel{supp:cases}{{S5}{5}{Additional Experimental Results}{section.1.5}{}}
+\newlabel{supp:cases@cref}{{[section][5][]S5}{[1][5][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.1}Formula of Causal Weighted DPO}{5}{subsection.1.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.2}Additional Ablation Studies}{5}{subsection.1.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Additional ablation study results on VQA-RAD and IU-XRay. $^\text  {s}$ denotes the model enhanced with SFT. $_\text  {+}$ denotes the baseline model is LLaVa-Med++, while $_\text  {G}$ denotes the baseline model is Med-Gemma.\relax }}{6}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:supp_ablation}{{6}{6}{Additional ablation study results on VQA-RAD and IU-XRay. $^\text {s}$ denotes the model enhanced with SFT. $_\text {+}$ denotes the baseline model is LLaVa-Med++, while $_\text {G}$ denotes the baseline model is Med-Gemma.\relax }{figure.caption.17}{}}
+\newlabel{fig:supp_ablation@cref}{{[figure][6][]6}{[1][5][]6}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Performance analysis of sample ratio of causal pairs on VQA-RAD and IU-Xray.\relax }}{7}{table.caption.18}\protected@file@percent }
+\newlabel{tab:ratio_ablation}{{6}{7}{Performance analysis of sample ratio of causal pairs on VQA-RAD and IU-Xray.\relax }{table.caption.18}{}}
+\newlabel{tab:ratio_ablation@cref}{{[table][6][]6}{[1][6][]7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.3}VQA Case Studies}{7}{subsection.1.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Open-ended VQA Examples}{7}{section*.19}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Open-ended VQA case studies.} Comparison of responses from baseline methods and our causality-aware approach on challenging open-ended medical questions. Green checkmarks indicate clinically accurate anatomical identifications, while red thumb down icons denote factual errors or hallucinations.\relax }}{7}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:open_vqa_cases}{{7}{7}{\textbf {Open-ended VQA case studies.} Comparison of responses from baseline methods and our causality-aware approach on challenging open-ended medical questions. Green checkmarks indicate clinically accurate anatomical identifications, while red thumb down icons denote factual errors or hallucinations.\relax }{figure.caption.20}{}}
+\newlabel{fig:open_vqa_cases@cref}{{[figure][7][]7}{[1][7][]7}}
+\@writefile{toc}{\contentsline {subsubsection}{Close-ended VQA Examples}{8}{section*.21}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {Close-ended VQA case studies.} Binary medical questions where our causality-aware approach correctly identifies normal anatomical structures while baseline methods incorrectly detect non-existent abnormalities. Green checkmarks indicate clinically accurate anatomical identifications, while red thumb down icons denote factual errors or hallucinations.\relax }}{8}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:close_vqa_cases}{{8}{8}{\textbf {Close-ended VQA case studies.} Binary medical questions where our causality-aware approach correctly identifies normal anatomical structures while baseline methods incorrectly detect non-existent abnormalities. Green checkmarks indicate clinically accurate anatomical identifications, while red thumb down icons denote factual errors or hallucinations.\relax }{figure.caption.22}{}}
+\newlabel{fig:close_vqa_cases@cref}{{[figure][8][]8}{[1][8][]8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {S5.4}Report Generation Case Studies}{8}{subsection.1.5.4}\protected@file@percent }
+\citation{ouyang2022training,liu2025survey}
+\citation{Christiano2017RLHF}
+\citation{Schulman2017PPO}
+\citation{rafailov2023direct}
+\citation{Bradley1952BT}
+\citation{Ethayarajh2024KTO}
+\citation{liustatistical}
+\citation{hong2024reference}
+\citation{meng2024simpo}
+\citation{wu2025selfplay}
+\citation{wang2024mdpo}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {Medical report generation case studies.} Comparative analysis of chest X-ray report quality, highlighting our method's ability to accurately identify complex pathological findings while baseline methods either miss critical findings or provide incomplete assessments. Green checkmarks indicate accurate pathological identifications, while orange checkmarks denote partial accuracy, and thumb down icons represent missed diagnoses.\relax }}{9}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:report_generation}{{9}{9}{\textbf {Medical report generation case studies.} Comparative analysis of chest X-ray report quality, highlighting our method's ability to accurately identify complex pathological findings while baseline methods either miss critical findings or provide incomplete assessments. Green checkmarks indicate accurate pathological identifications, while orange checkmarks denote partial accuracy, and thumb down icons represent missed diagnoses.\relax }{figure.caption.23}{}}
+\newlabel{fig:report_generation@cref}{{[figure][9][]9}{[1][8][]9}}
+\@writefile{toc}{\contentsline {section}{\numberline {S6}Related Works}{9}{section.1.6}\protected@file@percent }
+\newlabel{supp:related}{{S6}{9}{Related Works}{section.1.6}{}}
+\newlabel{supp:related@cref}{{[section][6][]S6}{[1][9][]9}}
+\gdef \@abspage@last{23}

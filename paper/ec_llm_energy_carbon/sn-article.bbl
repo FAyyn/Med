@@ -1,0 +1,211 @@
+\begin{thebibliography}{35}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Chebbi and Kolade(2025)}]{chebbi2025energygpt}
+Chebbi A, Kolade B (2025) Towards energygpt: A large language model specialized
+  for the energy sector. arXiv preprint arXiv:250907177
+  \doi{10.48550/arXiv.2509.07177},
+  \urlprefix\url{https://arxiv.org/abs/2509.07177},
+  {\href{https://arxiv.org/abs/2509.07177}{{arXiv:2509.07177}}} {[cs.CL]}
+
+\bibitem[{Cheng et~al.(2024)Cheng, Zhao, Zhou, Zhao, Cao, and
+  Yang}]{cheng2024gaia}
+Cheng Y, Zhao H, Zhou X, et~al (2024) Gaia -- a large language model for
+  advanced power dispatch. arXiv preprint arXiv:240803847
+  \doi{10.48550/arXiv.2408.03847},
+  \urlprefix\url{https://arxiv.org/abs/2408.03847},
+  {\href{https://arxiv.org/abs/2408.03847}{{arXiv:2408.03847}}} {[eess.SY]}
+
+\bibitem[{Dai et~al.(2024)Dai, Deng, Zhao, Xu, Gao, Chen, Li, Zeng, Yu, Wu
+  et~al.}]{dai2024deepseekmoe}
+Dai D, Deng C, Zhao C, et~al (2024) Deepseekmoe: Towards ultimate expert
+  specialization in mixture-of-experts language models. arXiv preprint
+  arXiv:240106066
+
+\bibitem[{Faiz et~al.(2023)Faiz, Kaneda, Wang, Osi, Sharma, Chen, and
+  Jiang}]{faiz2023llmcarbon}
+Faiz A, Kaneda S, Wang R, et~al (2023) Llmcarbon: Modeling the end-to-end
+  carbon footprint of large language models. arXiv preprint arXiv:230914393
+  \doi{10.48550/arXiv.2309.14393},
+  \urlprefix\url{https://arxiv.org/abs/2309.14393},
+  {\href{https://arxiv.org/abs/2309.14393}{{arXiv:2309.14393}}} {[cs.CL]}
+
+\bibitem[{Guo et~al.(2025)Guo, Kai, Liang, Jiang, Gao, Hua, and
+  Dong}]{guo-etal-2025-sdbench}
+Guo C, Kai H, Liang S, et~al (2025) {SDB}ench: A survey-based domain-specific
+  {LLM} benchmarking and optimization framework. In: Che W, Nabende J, Shutova
+  E, et~al (eds) Proceedings of the 63rd Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers). Association for
+  Computational Linguistics, Vienna, Austria, pp 13492--13506,
+  \doi{10.18653/v1/2025.acl-long.662},
+  \urlprefix\url{https://aclanthology.org/2025.acl-long.662/}
+
+\bibitem[{Hemied and Gabbar(2024)}]{hemied2024re}
+Hemied OS, Gabbar HA (2024) Re-llama: Large language models for hydrogen
+  deployment: A domain-specific approach in renewable energy. In: 2024 8th
+  International Symposium on Innovative Approaches in Smart Technologies
+  (ISAS), IEEE, pp 1--4
+
+\bibitem[{Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, Chen
+  et~al.}]{hu2022lora}
+Hu EJ, Shen Y, Wallis P, et~al (2022) Lora: Low-rank adaptation of large
+  language models. ICLR 1(2):3
+
+\bibitem[{Jiang et~al.(2023)Jiang, Shen, Jin, Zhang, Parisio, Li, and
+  Kou}]{jiang2023solution}
+Jiang T, Shen Z, Jin X, et~al (2023) Solution to coordination of transmission
+  and distribution for renewable energy integration into power grids: An
+  integrated flexibility market. CSEE Journal of Power and Energy Systems
+  9(2):444--458
+
+\bibitem[{Lee(2023)}]{lee2023lexgpt}
+Lee JS (2023) Lexgpt 0.1: pre-trained gpt-j models with pile of law. arXiv
+  preprint arXiv:230605431
+
+\bibitem[{Lin(2004)}]{lin2004rouge}
+Lin CY (2004) Rouge: A package for automatic evaluation of summaries. In: Text
+  summarization branches out, pp 74--81
+
+\bibitem[{Ling et~al.(2024)Ling, Zhao, Lu, Deng, Zheng, Wang, Chowdhury, Li,
+  Cui, Zhang, Zhao, Panalkar, Mehta, Pasquali, Cheng, Wang, Liu, Chen, Chen,
+  White, Gu, Pei, Yang, and Zhao}]{ling2024domainspecializationkeymake}
+Ling C, Zhao X, Lu J, et~al (2024) Domain specialization as the key to make
+  large language models disruptive: A comprehensive survey.
+  \urlprefix\url{https://arxiv.org/abs/2305.18703},
+  {\href{https://arxiv.org/abs/2305.18703}{{arXiv:2305.18703}}}
+
+\bibitem[{Liu et~al.(2024)Liu, Bai, Wen, Wang, Liu, Liang, Zhao, and
+  Dong}]{liu2024lfllm}
+Liu G, Bai Y, Wen K, et~al (2024) Lfllm: A large language model for load
+  forecasting. TechRxiv \doi{10.36227/techrxiv.170475236.64005369},
+  \urlprefix\url{https://doi.org/10.36227/techrxiv.170475236.64005369}
+
+\bibitem[{Liu et~al.(2023)Liu, Wang, Yang, and Zha}]{liu2023fingpt}
+Liu XY, Wang G, Yang H, et~al (2023) Fingpt: Democratizing internet-scale data
+  for financial large language models. arXiv preprint arXiv:230710485
+
+\bibitem[{Luo et~al.(2022)Luo, Sun, Xia, Qin, Zhang, Poon, and
+  Liu}]{luo2022biogpt}
+Luo R, Sun L, Xia Y, et~al (2022) Biogpt: generative pre-trained transformer
+  for biomedical text generation and mining. Briefings in bioinformatics
+  23(6):bbac409
+
+\bibitem[{Mahapatra and Nayyar(2022)}]{mahapatra2022hems}
+Mahapatra B, Nayyar A (2022) Home energy management system (hems): concept,
+  architecture, infrastructure, challenges and energy management schemes.
+  Energy Systems 13:643--669
+
+\bibitem[{Majumder et~al.(2024)Majumder, Dong, Doudi, Cai, Tian, Kalathil,
+  Ding, Thatte, Li, and Xie}]{majumder2024joule-llm-energy}
+Majumder S, Dong L, Doudi F, et~al (2024) Exploring the capabilities and
+  limitations of large language models in the electric energy sector. Joule
+  8(6):1544--1549. \doi{10.1016/j.joule.2024.05.009},
+  \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S254243512400237X}
+
+\bibitem[{Mazzeo et~al.(2024)Mazzeo, Matera, De~Luca, and
+  Musmanno}]{mazzeo2024h2v_v2h}
+Mazzeo D, Matera N, De~Luca R, et~al (2024) A smart algorithm to optimally
+  manage the charging strategy of the home to vehicle (h2v) and vehicle to home
+  (v2h) technologies in an off-grid home powered by renewable sources. Energy
+  Systems 15:715--752
+
+\bibitem[{Ntakolia et~al.(2022)Ntakolia, Anagnostis, Moustakidis, and
+  Karcanias}]{ntakolia2022district_heating_ml_review}
+Ntakolia C, Anagnostis A, Moustakidis S, et~al (2022) Machine learning applied
+  on the district heating and cooling sector: a review. Energy Systems 13:1--30
+
+\bibitem[{Papineni et~al.(2002)Papineni, Roukos, Ward, and
+  Zhu}]{papineni2002bleu}
+Papineni K, Roukos S, Ward T, et~al (2002) Bleu: a method for automatic
+  evaluation of machine translation. In: Proceedings of the 40th annual meeting
+  of the Association for Computational Linguistics, pp 311--318
+
+\bibitem[{Rei et~al.(2020)Rei, Fernandes, Farinha, and Martins}]{rei2020comet}
+Rei R, Fernandes L, Farinha AC, et~al (2020) Comet: A neural framework for {MT}
+  evaluation. In: Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP), pp 2685--2702
+
+\bibitem[{Sarvi and Azadian(2022)}]{sarvi2022mppt_review}
+Sarvi M, Azadian A (2022) A comprehensive review and classified comparison of
+  mppt algorithms in pv systems. Energy Systems 13:281--320
+
+\bibitem[{Sellam et~al.(2020)Sellam, Das, and Parikh}]{sellam2020bleurt}
+Sellam T, Das D, Parikh AP (2020) {BLEURT}: Learning a metric for text
+  generation. In: Proceedings of the 58th Annual Meeting of the Association for
+  Computational Linguistics (ACL), pp 7881--7892
+
+\bibitem[{Shazeer(2020)}]{shazeer2020glu}
+Shazeer N (2020) Glu variants improve transformer. arXiv preprint
+  arXiv:200205202
+
+\bibitem[{Shu et~al.(2024)Shu, Zhao, Liu, Demeter, Du, and
+  Zhang}]{shu2024lawllm}
+Shu D, Zhao H, Liu X, et~al (2024) Lawllm: Law large language model for the us
+  legal system. In: Proceedings of the 33rd ACM International Conference on
+  Information and Knowledge Management, pp 4882--4889
+
+\bibitem[{Singhal et~al.(2023)Singhal, Azizi, Tu, Mahdavi, Wei, Chung, Scales,
+  Tanwani, Cole-Lewis, Pfohl et~al.}]{singhal2023large}
+Singhal K, Azizi S, Tu T, et~al (2023) Large language models encode clinical
+  knowledge. Nature 620(7972):172--180
+
+\bibitem[{Spinti et~al.(2023)Spinti, Smith, Smith, and
+  D{\'\i}az-Ibarra}]{spinti2023atikokan}
+Spinti JP, Smith PJ, Smith ST, et~al (2023) Atikokan digital twin, part b:
+  Bayesian decision theory for process optimization in a biomass energy system.
+  Applied Energy 334:120625
+
+\bibitem[{Su et~al.(2024)Su, Ahmed, Lu, Pan, Bo, and Liu}]{su2024roformer}
+Su J, Ahmed M, Lu Y, et~al (2024) Roformer: Enhanced transformer with rotary
+  position embedding. Neurocomputing 568:127063
+
+\bibitem[{Wang et~al.(2024)Wang, Li, and Li}]{wang2024ecological}
+Wang Q, Li Y, Li R (2024) Ecological footprints, carbon emissions, and energy
+  transitions: the impact of artificial intelligence (ai). Humanities and
+  Social Sciences Communications 11(1):1--18
+
+\bibitem[{Wang et~al.(2022)Wang, Kordi, Mishra, Liu, Smith, Khashabi, and
+  Hajishirzi}]{wang2022self}
+Wang Y, Kordi Y, Mishra S, et~al (2022) Self-instruct: Aligning language models
+  with self-generated instructions. arXiv preprint arXiv:221210560
+
+\bibitem[{Wu et~al.(2023)Wu, Irsoy, Lu, Dabravolski, Dredze, Gehrmann,
+  Kambadur, Rosenberg, and Mann}]{wu2023bloomberggpt}
+Wu S, Irsoy O, Lu S, et~al (2023) Bloomberggpt: A large language model for
+  finance. arXiv preprint arXiv:230317564
+
+\bibitem[{Yang et~al.(2025{\natexlab{a}})Yang, Li, Yang, Zhang, Hui, Zheng, Yu,
+  Gao, Huang, Lv et~al.}]{yang2025qwen3}
+Yang A, Li A, Yang B, et~al (2025{\natexlab{a}}) Qwen3 technical report. arXiv
+  preprint arXiv:250509388
+
+\bibitem[{Yang et~al.(2025{\natexlab{b}})Yang, Yu, Li, Liu, Huang, Huang,
+  Jiang, Tu, Zhang, Zhou et~al.}]{yang2025qwen2}
+Yang A, Yu B, Li C, et~al (2025{\natexlab{b}}) Qwen2. 5-1m technical report.
+  arXiv preprint arXiv:250115383
+
+\bibitem[{Yu et~al.(2024)Yu, Wu, Deng, Tang, and Zhang}]{yu2024opencarboneval}
+Yu Z, Wu Y, Deng Z, et~al (2024) Opencarboneval: A unified carbon emission
+  estimation framework in large-scale ai models. arXiv preprint arXiv:240512843
+  \doi{10.48550/arXiv.2405.12843},
+  \urlprefix\url{https://arxiv.org/abs/2405.12843},
+  {\href{https://arxiv.org/abs/2405.12843}{{arXiv:2405.12843}}} {[cs.CY]}
+
+\bibitem[{Zhang and Sennrich(2019)}]{zhang2019root}
+Zhang B, Sennrich R (2019) Root mean square layer normalization. Advances in
+  Neural Information Processing Systems 32
+
+\bibitem[{Zhou et~al.(2024)Zhou, Zhao, Cheng, Cao, Liang, Liu, Liu, Xu, and
+  Zhao}]{zhou2024elecbench}
+Zhou X, Zhao H, Cheng Y, et~al (2024) Elecbench: a power dispatch evaluation
+  benchmark for large language models. arXiv preprint arXiv:240705365
+  \doi{10.48550/arXiv.2407.05365},
+  \urlprefix\url{https://arxiv.org/abs/2407.05365},
+  {\href{https://arxiv.org/abs/2407.05365}{{arXiv:2407.05365}}} {[cs.AI]}
+
+\end{thebibliography}

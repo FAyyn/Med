@@ -31,3 +31,19 @@ For evaluation, refer directly to the MedEvalKit readme file located in the /wor
 
 
 Environment requirements are detailed in the respective requirements.txt files.
+
+---
+
+## 仓库结构
+
+| 目录 | 功能 |
+|------|------|
+| `MMedPO/` | 主项目：数据构建、SFT/DPO 训练、推理、评测、工具脚本 |
+| `MedEvalKit/` | 医疗多模态大模型评测套件 |
+| `baselines/` | 对比方法实现（SimPO 等） |
+| `evaluation/` | 评测工具：radgraph、CheXbert、medgemma |
+| `analysis/` | 实验结果分析与可视化脚本 |
+| `paper/` | 论文 LaTeX 源码（camppo / sections / figures）与期刊会议模板 |
+| `literature/` | 参考文献 PDF |
+
+> 模型权重、数据集、虚拟环境 `.venv`、编译产物等大文件已通过 `.gitignore` 排除，不会入库。
