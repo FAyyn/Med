@@ -1,36 +1,10 @@
-# Med
+# Med — 医疗多模态大模型偏好优化研究仓库
 
-The evaluation script has been changed, I added the checkpoint supply, now you could evaluate the model by using the checkpoint. 
+本仓库整合了 **MMedPO**（临床感知的多模态偏好优化）及其后续工作 **CaMedPO / CaMPPO**（因果感知偏好优化）的全部代码、评测工具、实验分析与论文资料。
 
-I also leaved some comments in the scripts about the dataset path, I hope they would help you.
-
-If there are any other questions you could leave a comment in the issue.
-
-I have stored the model training code in the MMedPO directory, while the model evaluation code resides in the MedEvalKit directory.
-
-All model training scripts are located in the MMedPO/MMedPO/scripts directory. SFT training can be performed using the train_sft.sh script, and DPO training via train_dpo_visual-text.sh. Training parameters such as GPU invocation can be directly modified within the scripts.
-
-SFT training can directly utilize DPO data converted to SFT format. The data format conversion is implemented within the MMedPO/scripts/train_sft.sh script.
-
-Method 1: The script for constructing pairs is MMedPO/scripts/run_inference_visual_indirect.sh. It uses MMedPO/data/slake_dpo_weighted.json as input, performs tie calculations, and constructs pairs. Since the original images and background images are too large to upload to the repository, you can directly use the pre-generated dataset for DPO or SSPO training.
-
-There are three training scripts for SSPO:
-MMedPO/scripts/train_sspo_adv.sh: SSPO using weights instead of dynamic w for loss calculation
-MMedPO/scripts/train_sspo.sh: Standard SSPO
-MMedPO/scripts/train_tie_sspo.sh: SSPO with dynamic w calculation added
-
-SLAKE dataset and the processed occluded background image URLs：https://drive.google.com/file/d/1YJC7KspZohlfGxylWAKc6bVxfMZKGbYS/view?usp=drive_link
-
-Method 1 dataset path: MMedPO/data/tie_dpo_dataset_method1_converted.json
-
-All scripts above allow direct modification of parameters within the script, such as dataset paths, model paths, GPU invocation, etc.
-
-After modifications, run the script using bash, e.g., bash MMedPO/scripts/train_dpo_visual-text.sh
-
-For evaluation, refer directly to the MedEvalKit readme file located in the /workspace/MMedPO/MedEvalKit directory.
-
-
-Environment requirements are detailed in the respective requirements.txt files.
+- 主项目论文：MMedPO — [arXiv:2412.06141](https://arxiv.org/abs/2412.06141)
+- 后续方法论文：*Causality-Aware Preference Optimization for Aligning Medical Vision Language Models*（LaTeX 源码保存在本地 `paper/` 目录，未随仓库发布）
+- 评测框架：MedEvalKit — [arXiv:2506.07044](https://arxiv.org/abs/2506.07044)
 
 ---
 
@@ -38,12 +12,85 @@ Environment requirements are detailed in the respective requirements.txt files.
 
 | 目录 | 功能 |
 |------|------|
-| `MMedPO/` | 主项目：数据构建、SFT/DPO 训练、推理、评测、工具脚本 |
-| `MedEvalKit/` | 医疗多模态大模型评测套件 |
-| `baselines/` | 对比方法实现（SimPO 等） |
-| `evaluation/` | 评测工具：radgraph、CheXbert、medgemma |
-| `analysis/` | 实验结果分析与可视化脚本 |
-| `paper/` | 论文 LaTeX 源码（camppo / sections / figures）与期刊会议模板 |
-| `literature/` | 参考文献 PDF |
+| [`MMedPO/`](MMedPO/README.md) | 主项目：数据构建、SFT / DPO / SSPO / GRPO 训练、推理、评测与工具脚本 |
+| [`MedEvalKit/`](MedEvalKit/Readme.md) | 医疗多模态大模型统一评测框架 |
+| [`baselines/`](baselines/README.md) | 对比方法实现（SimPO 等） |
+| [`evaluation/`](evaluation/README.md) | 评测工具：RadGraph、CheXbert、MedGemma |
+| [`analysis/`](analysis/README.md) | 实验结果分析、案例分类与可视化脚本 |
+| [`literature/`](literature/README.md) | 参考文献 PDF |
 
-> 模型权重、数据集、虚拟环境 `.venv`、编译产物等大文件已通过 `.gitignore` 排除，不会入库。
+> 以下目录已在 `.gitignore` 中排除，**不会出现在 GitHub 上**，仅本地保留：`paper/`（论文 LaTeX 与模板）、模型权重、数据集、虚拟环境 `.venv`、编译产物。
+
+---
+
+## 快速开始
+
+### 1. 环境安装
+
+```bash
+# 主项目（MMedPO）
+conda create -n MMedPO python=3.10 -y
+conda activate MMedPO
+pip install --upgrade pip
+pip install -r MMedPO/requirements.txt
+pip install trl
+
+# 评测框架（MedEvalKit）
+pip install -r MedEvalKit/requirements.txt
+```
+
+模型权重需自行下载：基础模型 [LLaVA-Med-1.5](https://huggingface.co/microsoft/llava-med-v1.5-mistral-7b)，MMedPO 官方 checkpoint 见 [mmedpo_checkpoints](https://huggingface.co/zky11235/mmedpo_checkpoints)。
+
+### 2. 数据准备
+
+- **SLAKE 数据集**与处理好的遮挡背景图：[Google Drive](https://drive.google.com/file/d/1YJC7KspZohlfGxylWAKc6bVxfMZKGbYS/view?usp=drive_link)
+- 已构建好的偏好数据在 `MMedPO/data/` 下，可直接使用：
+  - `slake_dpo_weighted.json` — SLAKE 加权 DPO 数据
+  - `tie_dpo_dataset_method1_converted.json` — 方法 1（tie 权重）生成的 DPO 数据
+  - `iuxray_dpo_weighted.json`、`mimic_dpo_weighted.json` — IU-Xray / MIMIC 数据
+  - `iuxray_sft_dataset.json` — SFT 格式数据
+
+### 3. 训练
+
+所有训练脚本位于 `MMedPO/scripts/`，参数（数据路径、模型路径、GPU 调用等）可直接在脚本内修改，然后 `bash MMedPO/scripts/xxx.sh` 运行。
+
+| 脚本 | 用途 |
+|------|------|
+| `train_sft.sh` | SFT 训练，可直接使用转成 SFT 格式的 DPO 数据 |
+| `train_dpo.sh` | DPO 训练 |
+| `train_dpo_visual-text.sh` / `train_dpo_visual-text_optimized.sh` | 视觉-文本 DPO 训练（后者为优化版） |
+| `train_sspo.sh` | 标准 SSPO |
+| `train_sspo_adv.sh` | SSPO：用权重替代动态 w 参与 loss 计算 |
+| `train_tie_sspo.sh` | SSPO：加入动态 w 计算 |
+| `run_sppo.py` | SSPO 训练入口 |
+| `MMedPO/train/rl/train_grpo_stage3.py` | GRPO 强化学习阶段训练 |
+
+### 4. 偏好对构建与推理
+
+| 脚本 | 用途 |
+|------|------|
+| `run_inference_visual_indirect.sh` | 方法 1：以 `slake_dpo_weighted.json` 为输入做 tie 计算并构建偏好对 |
+| `run_inference_text_contrast.sh` | 文本对比类推理 |
+| `run_inference_visual_consistency.sh` | 视觉一致性类推理 |
+| `run_full_inference_background.sh` | 背景随机化全量推理 |
+| `inference_llava-med_vqa.sh` / `inference_llava-med_report.sh` | LLaVA-Med 的 VQA / 报告生成推理 |
+| `inference_attention-map_score.sh` | 注意力图打分推理 |
+
+### 5. 评测
+
+- **MedEvalKit**：`MedEvalKit/eval.py` + `eval.sh` / `eval_chunked.sh`，详细说明见 [`MedEvalKit/Readme.md`](MedEvalKit/Readme.md)
+- **SLAKE 与 LLM-as-judge**：`eval_slake_inference.py`、`eval_slake_iou.py`、`eval_slake_combined.py`、`run_evaluate_llmjudge.sh`
+- **IoU 计算**：`run_compute_iou_slake.sh`（配合 `compute_iou_slake.py`）
+- **指标工具**：`evaluation/` 下的 RadGraph、CheXbert（见 [`evaluation/README.md`](evaluation/README.md)）
+
+### 6. 结果分析
+
+`analysis/` 下脚本用于对比 baseline / MMedPO / CaMedPO 的表现、按类别整理案例并生成可视化页面，详见 [`analysis/README.md`](analysis/README.md)。
+
+---
+
+## 说明
+
+- 评测脚本已补充 checkpoint 支持，可直接加载 checkpoint 进行评测；脚本中关于数据集路径的注释可按需修改。
+- 由于原始图像与背景图像体积过大无法入库，建议直接使用 `MMedPO/data/` 下预生成的数据集进行 DPO 或 SSPO 训练。
+- 各子目录均有独立 README，介绍该模块的内容与用法。

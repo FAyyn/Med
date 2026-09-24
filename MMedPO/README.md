@@ -109,3 +109,61 @@ bash scripts/inference_llava-med_{vqa/report}.sh
 
 ## 🙏 Acknowledgement
 We use code from [LLaVA-Med](https://github.com/microsoft/LLaVA-Med), [RULE](https://github.com/richard-peng-xia/RULE), [MedKLIP](https://github.com/MediaBrain-SJTU/MedKLIP). We thank the authors for releasing their code.
+
+---
+
+# 本工作区扩展内容（Scripts 说明）
+
+> 以下内容为在本仓库中新增 / 扩展的脚本说明，补充官方 README 未覆盖的部分。
+
+## 目录导览
+
+| 目录 | 内容 |
+|------|------|
+| `scripts/` | 训练、推理、评测、数据增强的一键运行脚本与工具 |
+| `train/dpo/` | DPO 训练代码（`train_dpo_weighted.py`、`train_dpo_medgemma.py`、`train_dpo_dual_gpu.py`、`llava_trainer_weighted.py`、`dpo_trainer_weighted.py`） |
+| `train/rl/` | 强化学习训练（`train_grpo_stage3.py`，GRPO 阶段） |
+| `inference/` | 偏好对构建与推理（`build_dpo_pairs_*.py`、`analyze_*`、`generate_master_question_set.py`） |
+| `eval/` | 评测脚本（`eval_vqa.py`、`eval_report.py`、`run_eval.sh`、`model_download.py`） |
+| `utils/` | 通用工具：tie 权重计算、数据格式转换、DPO 权重重算、LoRA 合并等 |
+| `tools/` | 影像处理工具（`remove_lesions_text_clipseg.py`，基于 CLIPSeg 去除病灶区域） |
+| `curation/` | 数据策展相关脚本 |
+| `rebuttal/` | rebuttal 阶段的补充实验与结果 |
+| `assets/` | 图片等资源 |
+| `data/` | 已构建的偏好数据集与数据转换脚本 |
+
+## 常用流程
+
+```bash
+# 1. 构建偏好对（方法 1：tie 权重）
+bash scripts/run_inference_visual_indirect.sh
+
+# 2. 训练
+bash scripts/train_sft.sh            # SFT
+bash scripts/train_dpo_visual-text.sh  # DPO
+bash scripts/train_sspo.sh            # SSPO
+bash scripts/train_tie_sspo.sh        # SSPO（动态 w）
+
+# 3. 推理
+bash scripts/inference_llava-med_vqa.sh      # VQA
+bash scripts/inference_llava-med_report.sh   # 报告生成
+
+# 4. 评测
+bash eval/run_eval.sh                        # MedEvalKit 评测
+bash scripts/run_compute_iou_slake.sh        # SLAKE IoU
+bash scripts/run_evaluate_llmjudge.sh        # LLM-as-judge
+
+# 5. 结果整理
+python scripts/plot_slake_results.py
+python scripts/evaluate_and_make_latex.py    # 生成 LaTeX 结果表
+```
+
+## 调试与诊断脚本
+
+`scripts/` 下另有一批排障脚本，用于在训练异常时定位问题：`check_lora_weights.py`、`debug_model_type.py`、`debug_training_environment.py`、`test_device_check.py`、`test_dpo_device_debug.py`、`test_dual_gpu_dpo.py`、`test_fixed_dpo_trainer.py`、`fix_disable_adapter_issue.py`、`verify_policy_reference_diff.py` 等。
+
+## 数据增强
+
+- `generate_background_randomized.py` — 生成随机化背景（用于构造视觉偏置样本）
+- `generate_lesion_subset.py` — 生成病灶子集
+- `generate_simulated_iou.py` — 生成模拟 IoU 数据
