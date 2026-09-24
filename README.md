@@ -1,5 +1,7 @@
 # Med — 医疗多模态大模型偏好优化研究仓库
 
+[English version see README_EN.md](README_EN.md)
+
 本仓库整合了 **MMedPO**（临床感知的多模态偏好优化）及其后续工作 **CaMedPO / CaMPPO**（因果感知偏好优化）的全部代码、评测工具、实验分析与论文资料。
 
 - 主项目论文：MMedPO — [arXiv:2412.06141](https://arxiv.org/abs/2412.06141)
@@ -12,12 +14,12 @@
 
 | 目录 | 功能 |
 |------|------|
-| [`MMedPO/`](MMedPO/README.md) | 主项目：数据构建、SFT / DPO / SSPO / GRPO 训练、推理、评测与工具脚本 |
+| [`MMedPO/`](MMedPO/README.md)（[EN](MMedPO/README_EN.md)） | 主项目：数据构建、SFT / DPO / SSPO / GRPO 训练、推理、评测与工具脚本 |
 | [`MedEvalKit/`](MedEvalKit/Readme.md) | 医疗多模态大模型统一评测框架 |
-| [`baselines/`](baselines/README.md) | 对比方法实现（SimPO 等） |
-| [`evaluation/`](evaluation/README.md) | 评测工具：RadGraph、CheXbert、MedGemma |
-| [`analysis/`](analysis/README.md) | 实验结果分析、案例分类与可视化脚本 |
-| [`literature/`](literature/README.md) | 参考文献 PDF |
+| [`baselines/`](baselines/README.md)（[EN](baselines/README_EN.md)） | 对比方法实现（SimPO 等） |
+| [`evaluation/`](evaluation/README.md)（[EN](evaluation/README_EN.md)） | 评测工具：RadGraph、CheXbert、MedGemma |
+| [`analysis/`](analysis/README.md)（[EN](analysis/README_EN.md)） | 实验结果分析、案例分类与可视化脚本 |
+| [`literature/`](literature/README.md)（[EN](literature/README_EN.md)） | 参考文献 PDF |
 
 ---
 

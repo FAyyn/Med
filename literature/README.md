@@ -1,5 +1,7 @@
 # literature — 参考文献
 
+[English version see README_EN.md](README_EN.md)
+
 本目录收集与本项目相关的参考文献 PDF，按主题分组，便于撰写论文与实验设计时查阅。（`SimPO` 论文 PDF 位于上级目录 `../2405.14734v3.pdf`。）
 
 ## 偏好优化方法

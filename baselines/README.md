@@ -1,5 +1,7 @@
 # baselines — 对比方法
 
+[English version see README_EN.md](README_EN.md)
+
 本目录存放与 MMedPO / CaMedPO 进行对比的偏好优化方法实现。
 
 ## SimPO

@@ -1,20 +1,23 @@
 # [MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization](https://arxiv.org/abs/2412.06141)
 
+[English version see README_EN.md](README_EN.md)
 
-## 💡 Overview
+## 💡 概述
 
 <div align=left>
 <img src=assets/logo.png width=90% />
 </div>
 
-## 📦 Requirements
-1. Clone this repository and navigate to MMedPO folder
+## 📦 环境要求
+
+1. 克隆仓库并进入 MMedPO 目录
+
 ```bash
 git clone https://github.com/aiming-lab/MMedPO.git
 cd MMedPO
 ```
 
-2. Install Package: Create conda environment
+2. 安装依赖：创建 conda 环境
 
 ```Shell
 conda create -n MMedPO python=3.10 -y
@@ -24,19 +27,20 @@ pip install -r requirements.txt
 pip install trl
 ```
 
-3. Download the required model checkpoints [LLaVA-Med-1.5](https://huggingface.co/microsoft/llava-med-v1.5-mistral-7b) from huggingface.
+3. 从 HuggingFace 下载所需模型权重 [LLaVA-Med-1.5](https://huggingface.co/microsoft/llava-med-v1.5-mistral-7b)。
 
-4. For model checkpoints, we released four [checkpoints](https://huggingface.co/zky11235/mmedpo_checkpoints) of MMedPO in the huggingface.
+4. 我们已在 HuggingFace 上发布四个 MMedPO [checkpoint](https://huggingface.co/zky11235/mmedpo_checkpoints)。
 
-5. For all the medical datasets, you need firstly apply for the right of access and then download the dataset.
+5. 医学数据集需先申请使用权限，再下载数据：
 
 - [MIMIC-CXR](https://physionet.org/content/mimic-cxr-jpg/2.0.0/)
-- [IU-Xray](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view) (Thanks to [R2GenGPT](https://github.com/wang-zhanyu/R2GenGPT) for sharing the file)
+- [IU-Xray](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view)（感谢 [R2GenGPT](https://github.com/wang-zhanyu/R2GenGPT) 分享该文件）
 - [VQA-RAD](https://osf.io/89kps/)
 - [SLAKE](https://www.med-vqa.com/slake/)
 
-## 🪧 Data Curation
-We use MedKLIP to generate visual preference data. Use the following command or the script `inference_attention-map_score.sh` at `./scripts`
+## 🪧 数据策展
+
+我们使用 MedKLIP 生成视觉偏好数据，可使用以下命令，或直接运行 `./scripts` 下的 `inference_attention-map_score.sh` 脚本：
 
 ```Shell
 python ./inference_attention-map_score.py \
@@ -48,8 +52,11 @@ python ./inference_attention-map_score.py \
     --annotation_save_root /path/to/save/annotation \
     --noised_image_save_root /path/to/save/noised_image \
 ```
-## 🏋️ Train
-Use the script `train_dpo_visual-text.sh` in `./scripts` or the following command, make sure to specify the necessary data paths and the checkpoint saving location.
+
+## 🏋️ 训练
+
+使用 `./scripts` 下的 `train_dpo_visual-text.sh` 脚本，或以下命令；注意指定必要的数据路径与 checkpoint 保存位置：
+
 ```
 deepspeed --include localhost:0,1,2,3 ./train/dpo/train_dpo_visual-text.py \
     --model_name_or_path /path/to/llava-med_model_checkpoint \
@@ -88,14 +95,15 @@ deepspeed --include localhost:0,1,2,3 ./train/dpo/train_dpo_visual-text.py \
     --lazy_preprocess True \
 ```
 
-## 🚀 Inference
-The inference script is at `scripts` folder. You can run after specifying relevant paths:
+## 🚀 推理
+
+推理脚本位于 `scripts` 目录，指定相关路径后即可运行：
 
 ```
 bash scripts/inference_llava-med_{vqa/report}.sh
 ```
 
-## 📚 Citation
+## 📚 引用
 
 ```bibtex
 @article{zhu2024mmedpo,
@@ -106,9 +114,9 @@ bash scripts/inference_llava-med_{vqa/report}.sh
 }
 ```
 
+## 🙏 致谢
 
-## 🙏 Acknowledgement
-We use code from [LLaVA-Med](https://github.com/microsoft/LLaVA-Med), [RULE](https://github.com/richard-peng-xia/RULE), [MedKLIP](https://github.com/MediaBrain-SJTU/MedKLIP). We thank the authors for releasing their code.
+本项目使用了 [LLaVA-Med](https://github.com/microsoft/LLaVA-Med)、[RULE](https://github.com/richard-peng-xia/RULE)、[MedKLIP](https://github.com/MediaBrain-SJTU/MedKLIP) 的代码，感谢作者开源。
 
 ---
 

@@ -1,5 +1,7 @@
 # analysis — 实验结果分析与可视化
 
+[English version see README_EN.md](README_EN.md)
+
 本目录（`analysis/`）存放实验结果分析脚本，用于对比 **baseline / MMedPO / CaMedPO（CaMPPO）** 三种方法在医学 VQA 与报告生成任务上的表现，并按类别整理、可视化典型案例。
 
 ## 脚本分类

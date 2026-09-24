@@ -1,5 +1,7 @@
 # evaluation — 评测工具
 
+[English version see README_EN.md](README_EN.md)
+
 本目录存放医疗（尤其是放射影像报告方向）常用的自动化评测工具，用于补充 MedEvalKit 之外的专项指标。
 
 | 子目录 | 用途 | 主要指标 |
