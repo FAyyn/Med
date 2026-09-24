@@ -3,7 +3,7 @@
 本仓库整合了 **MMedPO**（临床感知的多模态偏好优化）及其后续工作 **CaMedPO / CaMPPO**（因果感知偏好优化）的全部代码、评测工具、实验分析与论文资料。
 
 - 主项目论文：MMedPO — [arXiv:2412.06141](https://arxiv.org/abs/2412.06141)
-- 后续方法论文：*Causality-Aware Preference Optimization for Aligning Medical Vision Language Models*（LaTeX 源码保存在本地 `paper/` 目录，未随仓库发布）
+- 后续方法论文：*Causality-Aware Preference Optimization for Aligning Medical Vision Language Models*
 - 评测框架：MedEvalKit — [arXiv:2506.07044](https://arxiv.org/abs/2506.07044)
 
 ---
@@ -18,8 +18,6 @@
 | [`evaluation/`](evaluation/README.md) | 评测工具：RadGraph、CheXbert、MedGemma |
 | [`analysis/`](analysis/README.md) | 实验结果分析、案例分类与可视化脚本 |
 | [`literature/`](literature/README.md) | 参考文献 PDF |
-
-> 以下目录已在 `.gitignore` 中排除，**不会出现在 GitHub 上**，仅本地保留：`paper/`（论文 LaTeX 与模板）、模型权重、数据集、虚拟环境 `.venv`、编译产物。
 
 ---
 
@@ -92,5 +90,4 @@ pip install -r MedEvalKit/requirements.txt
 ## 说明
 
 - 评测脚本已补充 checkpoint 支持，可直接加载 checkpoint 进行评测；脚本中关于数据集路径的注释可按需修改。
-- 由于原始图像与背景图像体积过大无法入库，建议直接使用 `MMedPO/data/` 下预生成的数据集进行 DPO 或 SSPO 训练。
-- 各子目录均有独立 README，介绍该模块的内容与用法。
+- 若需从头构建偏好数据，可先运行 `MMedPO/scripts/run_inference_visual_indirect.sh`；否则直接使用 `MMedPO/data/` 下预生成的数据集进行 DPO 或 SSPO 训练即可。

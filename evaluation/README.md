@@ -29,13 +29,10 @@ pip install -r requirements.txt
 python src/label.py --reports_path <报告文件> --output_path <输出>
 ```
 
-> ⚠️ **模型权重未入库**（体积过大）：
-> - `BiomedVLP-CXR-BERT-general/`（1.7 GB）需按官方说明自行下载
-> - `radgraph-xl.tar.gz`（397 MB）需自行获取并解压
-> 二者已被 `.gitignore` 排除，磁盘上若已存在可直接使用。
+> **模型权重需自行下载**：
+> - `BiomedVLP-CXR-BERT-general/`（1.7 GB）按官方说明获取
+> - `radgraph-xl.tar.gz`（397 MB）获取后解压使用
 
 ## medgemma
 
 Google 基于 Gemma 3 的医疗多模态模型，提供 4B / 27B 等变体，含文本与图像理解能力。此处保留官方 notebooks 作为基线模型与调用示例参考，详见 [`medgemma/README.md`](medgemma/README.md)。
-
-> 该目录原有的 `.git` 已移除（公开仓库，可随时重新 clone），否则 Git 无法跟踪嵌套仓库。
